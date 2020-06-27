@@ -16,14 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/test', function () {
-    return('aaaaa');
-});
-
-Route::get('users/{id}', function ($id) {
-    
-});
-Route::group(['prefix' => 'admin'], function () {
-    
-});
