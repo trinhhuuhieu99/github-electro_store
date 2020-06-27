@@ -3,10 +3,6 @@
 <head>
 <title>Electronic Store </title>
 <!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Electronic Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 	function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
@@ -24,8 +20,8 @@
 <link rel="stylesheet" href="source/css/jquery.countdown.css" /> <!-- countdown --> 
 <!-- //js -->  
 <!-- web fonts --> 
-<!-- <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'> -->
-<!-- <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> -->
+<link href='https://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> 
 <!-- //web fonts -->  
 <!-- start-smooth-scrolling -->
 <script type="text/javascript">
@@ -207,7 +203,7 @@
 									<div class="col-sm-4">
 										<div class="w3ls_products_pos">
 											<h4>30%<i>Off/-</i></h4>
-											<img src="source/source/images/1.jpg" alt=" " class="img-responsive" />
+											<img src="source/images/1.jpg" alt=" " class="img-responsive" />
 										</div>
 									</div>
 									<div class="clearfix"></div>
@@ -1198,8 +1194,8 @@
 				<div class="timer_wrap">
 					<div id="counter"> </div>
 				</div>
-				<script src="js/jquery.countdown.js"></script>
-				<script src="js/script.js"></script>
+				<script src="source/js/jquery.countdown.js"></script>
+				<script src="source/js/script.js"></script>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -1257,7 +1253,7 @@
 							</article>
 						</div>
 					</div>
-						<script src="js/jquery.wmuSlider.js"></script> 
+						<script src="source/js/jquery.wmuSlider.js"></script> 
 						<script>
 							$('.example1').wmuSlider();         
 						</script> 
@@ -1450,7 +1446,7 @@
 						
 					});
 			</script>
-			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			<script type="text/javascript" src="source/js/jquery.flexisel.js"></script>
 		</div>
 	</div>
 	<!-- //top-brands --> 
@@ -1536,7 +1532,7 @@
 	</div>
 	<!-- //footer --> 
 	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
+	<script src="source/js/minicart.js"></script>
 	<script>
         w3ls.render();
 
