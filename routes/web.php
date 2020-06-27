@@ -24,3 +24,6 @@ Route::get('/test', function () {
 Route::get('users/{id}', function ($id) {
     
 });
+Route::group(['prefix' => 'admin'], function () {
+    
+});
