@@ -21,3 +21,7 @@ Route::get('/index ', [
     'as'=>'Trang-chu',
     'uses'=>'PagesController@getindex'
 ]);
+
+Route::get('/test', function () {
+    return view('master') ;
+});
