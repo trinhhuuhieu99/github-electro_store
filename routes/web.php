@@ -22,6 +22,7 @@ Route::get('/index ', [
     'uses'=>'PagesController@getindex'
 ]);
 
-Route::get('/test', function () {
-    return view('master') ;
-});
+Route::get('/detail',[
+    'as'=>'Chi tiết sản phẩm ',
+    'uses'=>'PagesController@getdetail'
+]);

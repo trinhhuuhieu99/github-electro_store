@@ -6,6 +6,7 @@
 <link href="source/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="source/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="source/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="source/css/flexslider.css" type="text/css" media="screen" />
 <link href="source/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
@@ -53,6 +54,22 @@
 <!-- for bootstrap working -->
 <script type="text/javascript" src="source/js/bootstrap-3.1.1.min.js"></script>
 <!-- //for bootstrap working -->
+<!-- flexslider -->
+<script defer src="source/js/jquery.flexslider.js"></script>
+<script>
+// Can also be used with $(document).ready()
+$(document).ready(function() {
+    $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+    });
+});
+</script>
+<!-- flexslider -->
+
+<!-- zooming-effect -->
+<script src="source/js/imagezoom.js"></script>
+<!-- //zooming-effect -->
 
 <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -62,6 +79,48 @@
         });
     });
 </script>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $("#flexiselDemo2").flexisel({
+            visibleItems:4,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,    		
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: { 
+                portrait: { 
+                    changePoint:480,
+                    visibleItems: 1
+                }, 
+                landscape: { 
+                    changePoint:640,
+                    visibleItems:2
+                },
+                tablet: { 
+                    changePoint:768,
+                    visibleItems: 3
+                }
+            }
+        });
+        
+    });
+</script>
+
+<!--quantity-->
+<script>
+    $('.value-plus1').on('click', function(){
+        var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)+1;
+        divUpd.text(newVal);
+    });
+
+    $('.value-minus1').on('click', function(){
+        var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)-1;
+        if(newVal>=1) divUpd.text(newVal);
+    });
+</script>
+<!--quantity-->
 
 <script>
     $('.example1').wmuSlider();         
@@ -127,5 +186,16 @@
     });
 </script>  
 <!-- //cart-js -->
+
+<script src="source/js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#horizontalTab1').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+</script>
 </body>
 </html>

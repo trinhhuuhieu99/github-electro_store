@@ -11,4 +11,10 @@ class PagesController extends Controller
     {
         return \view('pages.index') ;
     }
+
+    public function getdetail()
+    {
+        return view('pages.detail');
+        
+    }
 }
