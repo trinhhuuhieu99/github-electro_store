@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
 <title>Electronic Store </title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> 
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<!-- //for-mobile-apps -->
 <!-- Custom Theme files -->
 <link href="source/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="source/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="source/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="source/css/flexslider.css" type="text/css" media="screen" />
 <link href="source/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="source/css/flexslider.css" type="text/css" media="screen" />
+
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
 <link href="source/css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome icons -->
 <!-- js -->
+<script src="source/js/jquery.min.js"></script>
 
 <link rel="stylesheet" href="source/css/jquery.countdown.css" /> <!-- countdown --> 
 <!-- //js -->  
@@ -21,7 +31,14 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> 
 <!-- //web fonts -->  
 <!-- start-smooth-scrolling -->
-
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){		
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
 <!-- //end-smooth-scrolling --> 
 </head> 
 <body>
@@ -37,23 +54,13 @@
 
 
 
-<!-- for-mobile-apps -->
-<script type="application/x-javascript"> 
-    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-    function hideURLbar(){ window.scrollTo(0,1); } 
-</script>
-<!-- //for-mobile-apps -->
-<script src="source/js/easyResponsiveTabs.js" type="text/javascript"></script>
-<script src="source/js/jquery.min.js"></script>
-<script src="source/js/jquery.wmuSlider.js"></script> 
-<script src="source/js/minicart.js"></script>
-<script src="source/js/jquery.magnific-popup.js" type="text/javascript"></script>
-<script src="source/js/jquery.countdown.js"></script>
-<script src="source/js/script.js"></script>
-<script type="text/javascript" src="source/js/jquery.flexisel.js"></script>
+
+
 <!-- for bootstrap working -->
 <script type="text/javascript" src="source/js/bootstrap-3.1.1.min.js"></script>
 <!-- //for bootstrap working -->
+<script src="source/js/easyResponsiveTabs.js" type="text/javascript"></script>
+
 <!-- flexslider -->
 <script defer src="source/js/jquery.flexslider.js"></script>
 <script>
@@ -66,19 +73,21 @@ $(document).ready(function() {
 });
 </script>
 <!-- flexslider -->
-
 <!-- zooming-effect -->
 <script src="source/js/imagezoom.js"></script>
 <!-- //zooming-effect -->
 
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){		
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-    });
-</script>
+<script src="source/js/jquery.wmuSlider.js"></script> 
+<script src="source/js/minicart.js"></script>
+<script src="source/js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="source/js/jquery.countdown.js"></script>
+<script src="source/js/script.js"></script>
+<script type="text/javascript" src="source/js/jquery.flexisel.js"></script>
+
+
+
+
+
 
 <script type="text/javascript">
     $(window).load(function() {
@@ -186,10 +195,8 @@ $(document).ready(function() {
     });
 </script>  
 <!-- //cart-js -->
-
-<script src="source/js/easyResponsiveTabs.js" type="text/javascript"></script>
 <script type="text/javascript">
-    $(window).load(function () {
+    $(document).ready(function () {
         $('#horizontalTab1').easyResponsiveTabs({
             type: 'default', //Types: default, vertical, accordion           
             width: 'auto', //auto or any width like 600px
