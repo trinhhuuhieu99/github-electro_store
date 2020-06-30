@@ -1025,7 +1025,7 @@ li.w3pages .dropdown-menu > li > a:hover{
 }
 .w3agile_special_deals_grid_left_grid1{
 	padding:2em 2em 4.3em;
-	background:#3c43a4;
+	background: radial-gradient(rgba(3, 17, 11, 0.89), transparent);
 	text-align:center;
 }
 .w3agile_special_deals_grid_left_grid1 img{
