@@ -22,6 +22,11 @@ Route::get('/index ', [
     'uses'=>'PagesController@getindex'
 ]);
 
+Route::get('/about', [
+    'as'=>'Thong-tin',
+    'uses'=>'PagesController@getabout'
+]);
+
 Route::get('/detail',[
     'as'=>'Chi tiết sản phẩm ',
     'uses'=>'PagesController@getdetail'

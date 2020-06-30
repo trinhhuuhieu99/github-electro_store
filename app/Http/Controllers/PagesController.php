@@ -12,6 +12,11 @@ class PagesController extends Controller
         return \view('pages.index') ;
     }
 
+    public function getabout()
+    {
+        return \view('pages.about');
+    }
+
     public function getdetail()
     {
         return view('pages.detail');
