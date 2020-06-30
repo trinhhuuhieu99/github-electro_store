@@ -22,4 +22,9 @@ class PagesController extends Controller
         return view('pages.detail');
         
     }
+
+    public function getmail()
+    {
+        return view('pages.mail');
+    }
 }

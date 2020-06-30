@@ -31,3 +31,8 @@ Route::get('/detail',[
     'as'=>'Chi tiết sản phẩm ',
     'uses'=>'PagesController@getdetail'
 ]);
+
+Route::get('/mail', [
+    'as'=>'mailus',
+    'uses'=>'PagesController@getmail'
+]);
