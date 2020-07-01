@@ -22,10 +22,23 @@ Route::get('/index ', [
     'uses'=>'PagesController@getindex'
 ]);
 
+// Route::group(['prefix' => 'product'], function () {
+    
+//     Route::get('mobiles','PagesController@getmobiles')->name('mobiles_type');
+//     Route::get('accessories','PagesController@getaccessories')->name('accessories_type');
+//     Route::get('home','PagesController@gethome')->name('home_type');
+
+// });
+
+Route::get('mobiles','PagesController@getmobiles')->name('mobiles_type');
+Route::get('accessories','PagesController@getaccessories')->name('accessories_type');
+Route::get('home','PagesController@gethome')->name('home_type');
+
 Route::get('/about', [
     'as'=>'Thong-tin',
     'uses'=>'PagesController@getabout'
 ]);
+
 
 Route::get('/detail',[
     'as'=>'Chi tiết sản phẩm ',

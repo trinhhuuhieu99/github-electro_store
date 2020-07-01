@@ -1300,9 +1300,9 @@ ul.wmuSliderPagination {
 }
 .w3_footer_grid h3:after{
 	content:'';
-	background:#3c43a4;
+	background: indianred;
 	width:20%;
-	height:2px;
+	height: 3px;
 	position:absolute;
 	bottom:0;
 	left:0;
@@ -1333,7 +1333,7 @@ ul.wmuSliderPagination {
     text-decoration: none;
 }
 .w3_footer_grid ul li a:hover {
-	color:#212121;
+	color:rgb(73, 125, 184);
 }
 .w3_footer_grid ul.info li a {
     padding-left:2.2em;
@@ -3389,7 +3389,7 @@ td.invert-image a img {
 		margin-bottom: 1.2em;
 	}
 	.w3_footer_grid h3:after {
-		width: 7%;
+		width: 17%;
 	}
 	.w3_footer_grid {
 		padding-left: 1em;

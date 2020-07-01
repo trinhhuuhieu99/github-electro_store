@@ -30,6 +30,9 @@
 <link href='https://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'> 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> 
 <!-- //web fonts -->  
+<!-- for bootstrap working -->
+<script type="text/javascript" src="source/js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
 <!-- start-smooth-scrolling -->
 <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -49,16 +52,6 @@
     @include('footer')
     
 
-
-
-
-
-
-
-
-<!-- for bootstrap working -->
-<script type="text/javascript" src="source/js/bootstrap-3.1.1.min.js"></script>
-<!-- //for bootstrap working -->
 <script src="source/js/easyResponsiveTabs.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -86,13 +79,11 @@ $(document).ready(function() {
 <!-- //zooming-effect -->
 
 <script src="source/js/jquery.wmuSlider.js"></script> 
-<script src="source/js/minicart.js"></script>
 <script src="source/js/jquery.magnific-popup.js" type="text/javascript"></script>
 <script src="source/js/jquery.countdown.js"></script>
 <script src="source/js/script.js"></script>
 <script type="text/javascript" src="source/js/jquery.flexisel.js"></script>
-
-
+<script src="source/js/minicart.js"></script>
 
 
 

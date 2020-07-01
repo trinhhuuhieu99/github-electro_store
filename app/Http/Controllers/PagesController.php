@@ -27,4 +27,17 @@ class PagesController extends Controller
     {
         return view('pages.mail');
     }
+
+    public function getmobiles()
+    {
+        return view('pages.type_mobiles');
+    }
+    public function getaccessories()
+    {
+        return view('pages.type_accessories');
+    }
+    public function gethome()
+    {
+        return view('pages.type_home');
+    }
 }
