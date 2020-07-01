@@ -143,14 +143,15 @@ label.icon-search {
 	-webkit-transition:0.3s all ease-out 0.5s;
 }
 label.icon-search span {
+    margin-top: -8px;
     color: #ff5063;
     border: 1px solid;
-    padding: .6em;
+    padding: 14px;
 }
 /*-- //search --*/
 .box_1 {
 	float: right;
-	margin-top: 10px;
+	margin-top: 7px;
 }
 .box_1 a {
   color:#3c43a4;
@@ -185,7 +186,7 @@ a.simpleCart_empty {
     -webkit-border-radius: 7%;
     border-radius: 7%;
     width: 50px;
-    height: 44px;
+    height: 47px;
     text-align: center;
     outline: none;
     /* position: fixed; */
@@ -349,9 +350,13 @@ p.sbmincart-empty-text {
 /*-- navigation --*/
 .navbar-default .navbar-nav > li > a {
     color: #fff;
-	-webkit-transition:.5s all;
-	-moz-transition:.5s all; 
-	transition:.5s all;
+    margin-left: 80px;
+    padding-left: 13px;
+    font-size: 20px;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    transition:.5s all;
+    font-family: unset;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
@@ -373,11 +378,11 @@ p.sbmincart-empty-text {
     padding: 0;
 }
 ul.multi-column-dropdown h6 {
-    font-size: 1.5em; 
+    font-size: 24px;
     color:#3c43a4;
-    margin: 0 0 1em;
+    margin: 0px 0 1em;
     padding-bottom: 1em;
-    border-bottom: 1px solid #E4E4E4;
+    border-bottom: 1px solid #84513e;
     text-transform: capitalize;
 }
 .multi-column-dropdown li {
@@ -390,11 +395,13 @@ ul.multi-column-dropdown h6 {
     line-height: 1.428571429;
     color: #999 !important;
     white-space: normal;
-	font-weight:500 !important;
-	text-decoration:none;
+    font-weight:500 !important;
+    text-decoration:none;
+    font-size: 16px;
+    font-family: unset;
 }
 .multi-column-dropdown li a:hover{
-	color:#212121 !important;
+	color: blue !important;
 }
 .multi-column-dropdown li a span {
     margin-left: 1em;
@@ -455,6 +462,8 @@ ul.multi-column-dropdown h6 {
 }
 .navbar-nav {
     float: none;
+    /* width: 78%; */
+    margin-left: -120px;
 }
 .navbar-nav > li:nth-child(1) {
     margin-left: 12em;

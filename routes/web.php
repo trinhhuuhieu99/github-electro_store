@@ -30,9 +30,9 @@ Route::get('/index ', [
 
 // });
 
-Route::get('mobiles','PagesController@getmobiles')->name('mobiles_type');
-Route::get('accessories','PagesController@getaccessories')->name('accessories_type');
-Route::get('home','PagesController@gethome')->name('home_type');
+Route::get('mobiles','PagesController@getmobiles')->name('sản phẩm điện thoại');
+Route::get('accessories','PagesController@getaccessories')->name('phụ kiện');
+Route::get('home','PagesController@gethome')->name('sản phẩm gia đình');
 
 Route::get('/about', [
     'as'=>'Thong-tin',
@@ -46,6 +46,6 @@ Route::get('/detail',[
 ]);
 
 Route::get('/mail', [
-    'as'=>'mailus',
+    'as'=>'Gửi-mail',
     'uses'=>'PagesController@getmail'
 ]);
