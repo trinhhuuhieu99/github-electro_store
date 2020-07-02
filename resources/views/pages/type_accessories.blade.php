@@ -108,7 +108,7 @@
 				<div class="col-md-8 w3ls_mobiles_grid_right">
 					<div class="col-md-6 w3ls_mobiles_grid_right_left">
 						<div class="w3ls_mobiles_grid_right_grid1">
-							<img src="source/images/48.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/48.jpg')}}" alt=" " class="img-responsive" />
 							<div class="w3ls_mobiles_grid_right_grid1_pos1">
 								<h3>Attractive<span> New</span> Wrist Watches</h3>
 							</div>
@@ -116,7 +116,7 @@
 					</div>
 					<div class="col-md-6 w3ls_mobiles_grid_right_left">
 						<div class="w3ls_mobiles_grid_right_grid1">
-							<img src="source/images/49.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/49.jpg')}}" alt=" " class="img-responsive" />
 							<div class="w3ls_mobiles_grid_right_grid1_pos"> 
 								<h3>Best Prices On<span> Laptop</span>Upto 50% Off</h3>
 							</div>
@@ -144,11 +144,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2">
-									<img src="source/images/25.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/22.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/23.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/24.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/25.jpg" alt=" " class="img-responsive" /> 
+									<img src="{{asset('source/images/25.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/22.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/23.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/24.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/25.jpg')}}" alt=" " class="img-responsive" /> 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -176,11 +176,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2"> 
-									<img src="source/images/p8.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p9.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p10.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p9.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p8.jpg" alt=" " class="img-responsive" /> 
+									<img src="{{asset('source/images/p8.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p9.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p10.jp')}}g" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p9.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p8.jpg')}}" alt=" " class="img-responsive" /> 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -205,11 +205,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2">
-									<img src="source/images/22.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/23.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/24.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/25.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/22.jpg" alt=" " class="img-responsive" /> 
+									<img src="{{asset('source/images/22.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/23.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/24.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/25.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/22.jpg')}}" alt=" " class="img-responsive" /> 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -237,11 +237,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2"> 
-									<img src="source/images/p10.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p8.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p9.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p10.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p8.jpg" alt=" " class="img-responsive" /> 
+									<img src="{{asset('source/images/p10.jp')}}g" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p8.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p9.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p10.jp')}}g" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p8.jpg')}}" alt=" " class="img-responsive" /> 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -266,11 +266,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2">
-									<img src="source/images/p6.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/26.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/31.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/22.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p6.jpg" alt=" " class="img-responsive" /> 
+									<img src="{{asset('source/images/p6.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/26.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/31.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/22.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p6.jpg')}}" alt=" " class="img-responsive" /> 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -298,11 +298,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2">
-									<img src="source/images/p7.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p11.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p3.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p11.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p7.jpg" alt=" " class="img-responsive" /> 
+									<img src="{{asset('source/images/p7.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p11.jp')}}g" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p3.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p11.jp')}}g" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p7.jpg')}}" alt=" " class="img-responsive" /> 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -330,11 +330,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2">
-									<img src="source/images/p11.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p3.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p7.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p3.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p11.jpg" alt=" " class="img-responsive" />  
+									<img src="{{asset('source/images/p11.jp')}}g" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p3.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p7.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p3.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p11.jp')}}g" alt=" " class="img-responsive" />  
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -362,11 +362,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2">
-									<img src="source/images/31.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/30.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/p6.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/26.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/29.jpg" alt=" " class="img-responsive" /> 
+									<img src="{{asset('source/images/31.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/30.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/p6.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/26.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/29.jpg')}}" alt=" " class="img-responsive" /> 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -391,11 +391,11 @@
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 								<div class="hs-wrapper hs-wrapper2">
-									<img src="source/images/26.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/24.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/23.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/22.jpg" alt=" " class="img-responsive" />
-									<img src="source/images/26.jpg" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/26.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/24.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/23.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/22.jpg')}}" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/26.jpg')}}" alt=" " class="img-responsive" />
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
@@ -433,7 +433,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/27.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/27.jpg')}}" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Latest Smart Phone </h4>
@@ -446,19 +446,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -497,7 +497,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/25.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/25.jpg')}}" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Latest Asus Red Laptop</h4>
@@ -505,19 +505,19 @@
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia  deserunt.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -556,7 +556,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/p8.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/p8.jpg')}}" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Fastrack Digital Watch</h4>
@@ -569,19 +569,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div> 
@@ -620,7 +620,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/34.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/34.jpg')}}" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Musical Kids Toy</h4>
@@ -633,19 +633,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -684,7 +684,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/p7.jpg" alt=" " class="img-responsive">
+							<img src="{{asset('source/images/p7.jpg')}}" alt=" " class="img-responsive">
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Home Security Camera</h4>
@@ -692,19 +692,19 @@
 								eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive">
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -743,7 +743,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/p3.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/p3.jpg')}}" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Music MP3 Player </h4>
@@ -756,19 +756,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -807,7 +807,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/38.jpg" alt=" " class="img-responsive">
+							<img src="{{asset('source/images/38.jpg')}}" alt=" " class="img-responsive">
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Kitchen &amp; Dining Accessories</h4>
@@ -820,19 +820,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive">
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive">
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -871,7 +871,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/p6.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('source/images/p6.jpg')}}" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Latest Asus ZenPad Tablet</h4>
@@ -884,19 +884,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star-.')}}png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="{{asset('source/images/star.p')}}ng" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>  
@@ -935,11 +935,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/34.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/35.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/27.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/28.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/37.jpg" alt=" " class="img-responsive" /> 
+								<img src="{{asset('source/images/34.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/35.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/27.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/28.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/37.jpg')}}" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -964,11 +964,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/36.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/32.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/33.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/32.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/36.jpg" alt=" " class="img-responsive" /> 
+								<img src="{{asset('source/images/36.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/32.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/33.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/32.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/36.jpg')}}" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -993,11 +993,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/38.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/37.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/27.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/28.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/37.jpg" alt=" " class="img-responsive" /> 
+								<img src="{{asset('source/images/38.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/37.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/27.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/28.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/37.jpg')}}" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -1022,11 +1022,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p5.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p1.jpg" alt=" " class="img-responsive" /> 
+								<img src="{{asset('source/images/p3.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/p5.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/p4.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/p2.jpg')}}" alt=" " class="img-responsive" />
+								<img src="{{asset('source/images/p1.jpg')}}" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>

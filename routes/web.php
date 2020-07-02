@@ -13,39 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'PagesController@getindex' )->name('Trang-chu');
+    
+Route::group(['prefix' => 'product'], function () {
+    
+    Route::get('mobiles','PagesController@getmobiles')->name('sản phẩm điện thoại');
+    Route::get('accessories','PagesController@getaccessories')->name('phụ kiện');
+    Route::get('home','PagesController@gethome')->name('sản phẩm gia đình');
+
 });
 
-Route::get('/index ', [
-    'as'=>'Trang-chu',
-    'uses'=>'PagesController@getindex'
-]);
-
-// Route::group(['prefix' => 'product'], function () {
-    
-//     Route::get('mobiles','PagesController@getmobiles')->name('mobiles_type');
-//     Route::get('accessories','PagesController@getaccessories')->name('accessories_type');
-//     Route::get('home','PagesController@gethome')->name('home_type');
-
-// });
-
-Route::get('mobiles','PagesController@getmobiles')->name('sản phẩm điện thoại');
-Route::get('accessories','PagesController@getaccessories')->name('phụ kiện');
-Route::get('home','PagesController@gethome')->name('sản phẩm gia đình');
-
-Route::get('/about', [
-    'as'=>'Thong-tin',
-    'uses'=>'PagesController@getabout'
-]);
+Route::get('/about', 'PagesController@getabout')->name('Thong-tin');
 
 
-Route::get('/detail',[
-    'as'=>'Chi tiết sản phẩm ',
-    'uses'=>'PagesController@getdetail'
-]);
+Route::get('/detail', 'PagesController@getdetail')->name('Chi tiết sản phẩm');
 
-Route::get('/mail', [
-    'as'=>'Gửi-mail',
-    'uses'=>'PagesController@getmail'
-]);
+Route::get('/mail', 'PagesController@getmail')->name('Gửi-mail');

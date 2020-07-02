@@ -48,7 +48,7 @@
                                 <div class="col-sm-4">
                                     <div class="w3ls_products_pos">
                                         <h4>30%<i>Off/-</i></h4>
-                                        <img src="source/images/1.jpg" alt=" " class="img-responsive" />
+                                        <img src="{{asset('source/images/1.jpg')}}" alt=" " class="img-responsive" />
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
