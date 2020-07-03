@@ -1,7 +1,6 @@
 @extends('master')
 @section('content')
 
-
 	<!-- banner -->
 	<div class="banner banner10">
 		<div class="container">
@@ -61,8 +60,8 @@
 			<h3>Meet Our Team</h3>
 			<div class="wthree_team_grids">
 				<div class="col-md-3 wthree_team_grid">
-					<img src="source/images/t4.png" alt=" " class="img-responsive" />
-					<h4>Smith Allen <span>Manager</span></h4>
+					<img src="source/images/Annotation.jpg" alt=" " class="img-responsive" />
+					<h4>Trình Hữu Hiếu <span>Chủ tịch hội đồng quản trị</span></h4>
 					<div class="agileits_social_button">
 						<ul>
 							<li><a href="#" class="facebook"> </a></li>
@@ -73,8 +72,8 @@
 					</div>
 				</div>
 				<div class="col-md-3 wthree_team_grid">
-					<img src="source/images/t5.png" alt=" " class="img-responsive" />
-					<h4>Laura James <span>Designer</span></h4>
+					<img src="source/images/83516525_1572833009558639_4395811743673420378_n.jpg" alt=" " class="img-responsive" />
+					<h4>Cung Minh Phong <span>Tổng giám đốc</span></h4>
 					<div class="agileits_social_button">
 						<ul>
 							<li><a href="#" class="facebook"> </a></li>
@@ -85,20 +84,8 @@
 					</div>
 				</div>
 				<div class="col-md-3 wthree_team_grid">
-					<img src="source/images/t6.png" alt=" " class="img-responsive" />
-					<h4>Crisp Doe <span>Director</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 wthree_team_grid">
-					<img src="source/images/t7.png" alt=" " class="img-responsive" />
-					<h4>Linda Rosy <span>Quality Checker</span></h4>
+					<img src="source/images/21731145_498199777196933_8748847657412284194_n.jpg" alt=" " class="img-responsive" />
+					<h4>Phạm Tiến Việt <span>Thằng ranh</span></h4>
 					<div class="agileits_social_button">
 						<ul>
 							<li><a href="#" class="facebook"> </a></li>
