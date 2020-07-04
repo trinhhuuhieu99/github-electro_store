@@ -149,8 +149,9 @@
 										</div>
 									</div>
 									<h5><a href="single.html">Speakers</a></h5>
-										<p><span>$320</span> <i class="item_price">$250</i></p>
+										
 									<div class="simpleCart_shelfItem">
+										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
