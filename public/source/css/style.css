@@ -459,7 +459,7 @@ ul.multi-column-dropdown h6 {
     margin: 3em 0 0;
     text-align:center;
     background: #ecf0f1;
-    z-index: 999;
+    z-index: 9999;
     position: sticky;
     top: 0;
 }
@@ -1990,7 +1990,7 @@ select.select_item {
 	height:40px;
 	position: absolute;
 	cursor: pointer;
-	z-index: 9999;
+	z-index: 99;
 }
 .nbs-flexisel-nav-left {
 	left:-5%;
@@ -3755,7 +3755,7 @@ td.invert-image a img {
 	} 
 	ul.multi-column-dropdown h6 {
 		font-size: 1.5em;
-		color: #fff;
+		color: #3c43a4;
 	}
 	.hidden-xs {
 		display: block !important;
@@ -3767,10 +3767,10 @@ td.invert-image a img {
 		margin: 0.8em 0 0; 
 	}
 	.multi-column-dropdown li a { 
-		color: #fff !important; 
+		color: #999 !important; 
 	}
 	.multi-column-dropdown li a:hover {
-		color: #ff5063 !important;
+		color: blue !important;
 	}
 	.multi-column-dropdown li { 
 		margin: 12px 0;
