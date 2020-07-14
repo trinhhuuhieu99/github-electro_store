@@ -4,12 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Product;
+
 class PagesController extends Controller
 {
     //
     public function getindex()
     {
-        return \view('pages.index') ;
+        $new_product = Product::where('new',1)->inRandomOrder()->limit(2)->get(); 
+        
+        return \view('pages.index', \compact('new_product') );
     }
 
     public function getabout()

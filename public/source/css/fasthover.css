@@ -17,16 +17,16 @@
 	top: 0px;
 	left: 0px;
 	position: absolute;
-	-webkit-animation: showMe 3s linear infinite 0s forwards;
+	/* -webkit-animation: showMe 3s linear infinite 0s forwards; */
 	-moz-animation: showMe 3s linear infinite 0s forwards;
 	-o-animation: showMe 3s linear infinite 0s forwards;
 	-ms-animation: showMe 3s linear infinite 0s forwards;
-	animation: showMe 3s linear infinite 0s forwards;
-	-webkit-animation-play-state: paused;
+	/* animation: showMe 3s linear infinite 0s forwards; */
+	/* -webkit-animation-play-state: paused; */
 	-moz-animation-play-state: paused;
 	-o-animation-play-state: paused;
 	-ms-animation-play-state: paused;
-	animation-play-state: paused;	
+	/* animation-play-state: paused; */
 }
 .hs-wrapper img:nth-child(1){
 	z-index: 9;
