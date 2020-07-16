@@ -25,14 +25,14 @@
 			<div class="col-md-4 single-left">
 				<div class="flexslider">
 					<ul class="slides">
-						<li data-thumb="source/images/a.jpg">
-							<div class="thumb-image"> <img src="source/images/a.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+						<li data-thumb="source/pages/images/a.jpg">
+							<div class="thumb-image"> <img src="source/pages/images/a.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
 						</li>
-						<li data-thumb="source/images/b.jpg">
-							 <div class="thumb-image"> <img src="source/images/b.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+						<li data-thumb="source/pages/images/b.jpg">
+							 <div class="thumb-image"> <img src="source/pages/images/b.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
 						</li>
-						<li data-thumb="source/images/c.jpg">
-						   <div class="thumb-image"> <img src="source/images/c.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+						<li data-thumb="source/pages/images/c.jpg">
+						   <div class="thumb-image"> <img src="source/pages/images/c.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
 						</li> 
 					</ul>
 				</div>
@@ -144,7 +144,7 @@
 						<h4>(2) Reviews</h4>
 						<div class="additional_info_sub_grids">
 							<div class="col-xs-2 additional_info_sub_grid_left">
-								<img src="source/images/t1.png" alt=" " class="img-responsive" />
+								<img src="source/pages/images/t1.png" alt=" " class="img-responsive" />
 							</div>
 							<div class="col-xs-10 additional_info_sub_grid_right">
 								<div class="additional_info_sub_grid_rightl">
@@ -157,19 +157,19 @@
 								<div class="additional_info_sub_grid_rightr">
 									<div class="rating">
 										<div class="rating-left">
-											<img src="source/images/star-.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star-.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star-.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -180,7 +180,7 @@
 						</div>
 						<div class="additional_info_sub_grids">
 							<div class="col-xs-2 additional_info_sub_grid_left">
-								<img src="source/images/t2.png" alt=" " class="img-responsive" />
+								<img src="source/pages/images/t2.png" alt=" " class="img-responsive" />
 							</div>
 							<div class="col-xs-10 additional_info_sub_grid_right">
 								<div class="additional_info_sub_grid_rightl">
@@ -193,19 +193,19 @@
 								<div class="additional_info_sub_grid_rightr">
 									<div class="rating">
 										<div class="rating-left">
-											<img src="source/images/star-.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star-.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 										</div>
 										<div class="rating-left">
-											<img src="source/images/star.png" alt=" " class="img-responsive">
+											<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -227,7 +227,7 @@
 					</div> 			        					            	      
 				</div>	
 			</div>
-			{{-- <script src="source/js/easyResponsiveTabs.js" type="text/javascript"></script>
+			{{-- <script src="source/pages/js/easyResponsiveTabs.js" type="text/javascript"></script>
 			<script type="text/javascript">
 				$(function () {
 					$('#horizontalTab1').easyResponsiveTabs({
@@ -248,11 +248,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/34.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/35.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/27.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/28.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/37.jpg" alt=" " class="img-responsive" /> 
+								<img src="source/pages/images/34.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/35.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/27.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/28.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/37.jpg" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -277,11 +277,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/36.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/32.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/33.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/32.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/36.jpg" alt=" " class="img-responsive" /> 
+								<img src="source/pages/images/36.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/32.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/33.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/32.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/36.jpg" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -306,11 +306,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/38.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/37.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/27.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/28.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/37.jpg" alt=" " class="img-responsive" /> 
+								<img src="source/pages/images/38.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/37.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/27.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/28.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/37.jpg" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -335,11 +335,11 @@
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="source/images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p5.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="source/images/p1.jpg" alt=" " class="img-responsive" /> 
+								<img src="source/pages/images/p3.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/p5.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/p4.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/p2.jpg" alt=" " class="img-responsive" />
+								<img src="source/pages/images/p1.jpg" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom">
 									<div class="flex_ecommerce">
 										<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -377,7 +377,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/34.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/34.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Musical Kids Toy</h4>
@@ -390,19 +390,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -441,7 +441,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/36.jpg" alt=" " class="img-responsive">
+							<img src="source/pages/images/36.jpg" alt=" " class="img-responsive">
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Dry Vacuum Cleaner</h4>
@@ -450,19 +450,19 @@
 								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -501,7 +501,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/p3.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/p3.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Music MP3 Player </h4>
@@ -514,19 +514,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -565,7 +565,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/38.jpg" alt=" " class="img-responsive">
+							<img src="source/pages/images/38.jpg" alt=" " class="img-responsive">
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Kitchen &amp; Dining Accessories</h4>
@@ -578,19 +578,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive">
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive">
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive">
 								</div>
 								<div class="clearfix"> </div>
 							</div>

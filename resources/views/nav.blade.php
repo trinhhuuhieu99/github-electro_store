@@ -49,7 +49,7 @@
                                     <div class="col-sm-3" id="anh_link">
                                         <div class="w3ls_products_pos">
                                             <h4>30%<i>Off/-</i></h4>
-                                            <img src="{{asset('source/images/1.jpg')}}" alt=" " class="img-responsive" />
+                                            <img src="{{asset('source/pages/images/1.jpg')}}" alt=" " class="img-responsive" />
                                         </div>
                                     </div>
                                 </a>

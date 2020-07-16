@@ -37,14 +37,14 @@
 							<div class="agile_ecommerce_tabs">
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/3.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/4.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/5.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/6.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/7.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/3.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/4.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/5.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -67,14 +67,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/4.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/5.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/6.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/7.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/3.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/4.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/5.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/6.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -97,14 +97,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/7.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/6.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/4.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/3.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/5.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/7.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/4.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/6.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -132,14 +132,14 @@
 							<div class="agile_ecommerce_tabs">
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -163,14 +163,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -193,14 +193,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -228,14 +228,14 @@
 							<div class="agile_ecommerce_tabs">
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -258,14 +258,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -288,14 +288,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -323,14 +323,14 @@
 							<div class="agile_ecommerce_tabs">
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -353,14 +353,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -383,14 +383,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -418,14 +418,14 @@
 							<div class="agile_ecommerce_tabs">
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -448,14 +448,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -478,14 +478,14 @@
 								</div>
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
 										<div class="w3_hs_bottom">
 											<ul>
 												<li>
@@ -526,7 +526,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/3.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/3.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>The Best Mobile Phone 3GB</h4>
@@ -534,19 +534,19 @@
 								commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -585,7 +585,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/9.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Multimedia Home Accessories</h4>
@@ -598,19 +598,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -649,7 +649,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/11.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Quad Core Colorful Laptop</h4>
@@ -657,19 +657,19 @@
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia  deserunt.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -708,7 +708,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/14.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Cool Single Door Refrigerator </h4>
@@ -716,19 +716,19 @@
 								eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -767,7 +767,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/17.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>New Model Mixer Grinder</h4>
@@ -776,19 +776,19 @@
 								eu fugiat nulla pariatur cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -827,7 +827,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/36.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/36.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Dry Vacuum Cleaner</h4>
@@ -836,19 +836,19 @@
 								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -887,7 +887,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/37.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/37.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Kitchen & Dining Accessories</h4>
@@ -900,19 +900,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -967,7 +967,7 @@
 			<div class="w3agile_special_deals_grids">
 				<div class="col-md-7 w3agile_special_deals_grid_left">
 					<div class="w3agile_special_deals_grid_left_grid">
-						<img src="source/images/21.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/21.jpg" alt=" " class="img-responsive" />
 						<div class="w3agile_special_deals_grid_left_grid_pos1">
 							<h5>30%<span>Off/-</span></h5>
 						</div>
@@ -980,7 +980,7 @@
 							<article style="position: absolute; width: 100%; opacity: 0;"> 
 								<div class="banner-wrap">
 									<div class="w3agile_special_deals_grid_left_grid1">
-										<img src="source/images/Annotation.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/Annotation.jpg" alt=" " class="img-responsive" />
 										<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
 											velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
 											eum fugiat quo voluptas nulla pariatur</p>
@@ -991,7 +991,7 @@
 							<article style="position: absolute; width: 100%; opacity: 0;"> 
 								<div class="banner-wrap">
 									<div class="w3agile_special_deals_grid_left_grid1">
-										<img src="source/images/21731145_498199777196933_8748847657412284194_n.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/21731145_498199777196933_8748847657412284194_n.jpg" alt=" " class="img-responsive" />
 										<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
 											velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
 											eum fugiat quo voluptas nulla pariatur</p>
@@ -1002,7 +1002,7 @@
 							<article style="position: absolute; width: 100%; opacity: 0;"> 
 								<div class="banner-wrap">
 									<div class="w3agile_special_deals_grid_left_grid1">
-										<img src="source/images/83516525_1572833009558639_4395811743673420378_n.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/83516525_1572833009558639_4395811743673420378_n.jpg" alt=" " class="img-responsive" />
 										<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
 											velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
 											eum fugiat quo voluptas nulla pariatur</p>
@@ -1014,7 +1014,7 @@
 					</div>
 				</div>
 				<div class="col-md-5 w3agile_special_deals_grid_right">
-					<img src="source/images/20.jpg" alt=" " class="img-responsive" />
+					<img src="source/pages/images/20.jpg" alt=" " class="img-responsive" />
 					<div class="w3agile_special_deals_grid_right_pos">
 						<h4>Women's <span>Special</span></h4>
 						<h5>save up <span>to</span> 30%</h5>
@@ -1034,7 +1034,7 @@
 				<div class="col-md-3 agileinfo_new_products_grid">
 					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
 						<div class="hs-wrapper hs-wrapper1">
-							<img src="source/images/{{$new->image}}" alt=" " class="img-responsive" />
+							<img src="source/pages/images/{{$new->image}}" alt=" " class="img-responsive" />
 						</div>
 					<h5><a href="single.html">{{$new->name}}</a></h5>
 						<div class="simpleCart_shelfItem">
@@ -1062,19 +1062,19 @@
 			<div class="sliderfig">
 				<ul id="flexiselDemo1">			
 					<li>
-						<img src="source/images/tb1.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb1.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb2.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb2.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb3.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb3.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb4.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb4.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb5.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb5.jpg" alt=" " class="img-responsive" />
 					</li>
 				</ul>
 			</div>
