@@ -11,9 +11,11 @@ class PagesController extends Controller
     //
     public function getindex()
     {
-        $new_product = Product::where('new',1)->inRandomOrder()->limit(2)->get(); 
+        $new_product = Product::where('new',1)->inRandomOrder()->limit(6)->get();
+
+        $mobiles_tab = Product::where('id_type',1)->inRandomOrder()->limit(3)->get();
         
-        return \view('pages.index', \compact('new_product') );
+        return \view('pages.index', \compact('new_product', 'mobiles_tab' ) );
     }
 
     public function getabout()

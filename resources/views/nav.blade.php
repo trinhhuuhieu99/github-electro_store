@@ -21,9 +21,9 @@
                                 <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
                                         <h6>Mobiles</h6>
-                                        <li><a href="products.html">Điện thoại</a></li>                                      
+                                        <li><a href="products.html">Điện thoại</a></li> 
+                                        <li><a href="products.html">Phụ kiện</a></li>                                     
                                         <li><a href="products1.html">Wearables <span>New</span></a></li>                                        
-                                        <li><a href="products.html">Phụ kiện</a></li>
                                         <li><a href="products.html">Popular Models  </a></li>
                                     </ul>
                                 </div>

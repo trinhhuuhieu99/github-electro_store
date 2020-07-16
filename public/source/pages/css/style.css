@@ -9,6 +9,10 @@ html, body{
     background: #2d3436;
     font-family:'Open Sans', sans-serif;
 }
+
+div#space_img {
+    padding-top: 20px;
+}
 p{
 	margin:0;
 	font-size: 15px;
