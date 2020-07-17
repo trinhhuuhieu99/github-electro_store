@@ -27,6 +27,8 @@
 	-o-animation-play-state: paused;
 	-ms-animation-play-state: paused;
 	/* animation-play-state: paused; */
+	/* width: 255px; */
+	/* height: 320px; */
 }
 .hs-wrapper img:nth-child(1){
 	z-index: 9;
@@ -38,6 +40,11 @@
 	-ms-animation-delay: .5s;
 	animation-delay: .5s;
 	z-index: 8;
+}
+
+img#img_bottom {
+    height: 320px;
+    width: 255px;
 }
 .hs-wrapper img:nth-child(3){
     -webkit-animation-delay: 1s;

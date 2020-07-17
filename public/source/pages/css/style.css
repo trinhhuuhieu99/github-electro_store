@@ -704,14 +704,17 @@ li.w3pages .dropdown-menu > li > a:hover{
 }
 .simpleCart_shelfItem p span{
 	color: #f1f2f6;
-	font-size: .8em;
+	font-size: 15px;
 	text-decoration: line-through;
-	padding-right: 1em;
+	padding-right: 7px;
 	font-weight: 300;
 }
 .agile_ecommerce_tab_left p i{
 	font-style:normal;
+	font-size: 17.5px;
 }
+
+i.item_price {}
 .simpleCart_shelfItem button.w3ls-cart {
     font-size: 14px;
     font-weight: 700;
@@ -5038,3 +5041,55 @@ td.invert-image a img {
 		margin-bottom: 1em;
 	}
 }    
+    /* ==========================================================================
+        11.2 RIBBON
+    ============================================================================= */
+    
+    .ribbon-wrapper {
+		width:60px;
+		height:60px;
+		overflow:hidden;
+		position:absolute;
+		top:-3px;
+		right:-3px;
+		z-index: 9;
+		}
+		
+		.ribbon {
+		color:#fff;
+		text-align:center;
+		-webkit-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		position:relative;
+		padding:4px 0;
+		left: 5px;
+		top: 4px;
+		width: 75px;
+		text-transform:uppercase;
+		background-color:#3a5c83;
+		font-size: 12px;
+		}
+		
+		.ribbon:before,.ribbon:after {
+		content:"";
+		border-top: 3px solid #607D8B;
+		border-left: 3px solid transparent;
+		border-right: 7px solid transparent;
+		position:absolute;
+		bottom: -3px;
+		}
+		
+		.ribbon:before {
+		left:0
+		}
+		
+		.ribbon:after {
+		right:0
+		}
+		
+		.ribbon.sale {
+		background-color: #4CAF50;
+		color: azure;
+		}

@@ -39,14 +39,17 @@
 								@foreach ($mobiles_tab as $mb_tab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-									<img src="source/pages/images/{{$mb_tab->image}}" alt=" " class="img-responsive" />
+										@if($mb_tab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$mb_tab->image}}" alt=" " class="img-responsive" />
 									</div> 
 									<h5><a href="single.html">{{$mb_tab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
 										@if($mb_tab->promotion_price==0)
-										<p><i class="item_price">{{$mb_tab->unit_price}}</i></p>
+										<p><i class="item_price">{{ number_format($mb_tab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{$mb_tab->unit_price}}</span> <i class="item_price">{{$mb_tab->promotion_price}}</i></p>	
+										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->promotion_price)}}đ</i></p>	
 										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
@@ -59,127 +62,26 @@
 								</div>
 								@endforeach
 								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="Tablet" aria-labelledby="Tablet-tab">
-							<div class="agile_ecommerce_tabs">
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Speakers</a></h5>
-										
-									<div class="simpleCart_shelfItem">
-										<p><span>$320</span> <i class="item_price">$250</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Speakers" /> 
-											<input type="hidden" name="amount" value="250.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Headphones</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$180</span> <i class="item_price">$150</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Headphones" /> 
-											<input type="hidden" name="amount" value="150.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Tablet Player</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$220</span> <i class="item_price">$180</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Tablet Player" /> 
-											<input type="hidden" name="amount" value="180.00"/>   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
+
 							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="Laptop" aria-labelledby="Laptop-tab">
 							<div class="agile_ecommerce_tabs">
+								@foreach ($laptop_tab as $lptab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
+										@if($lptab->promotion_price!=0)
+										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$lptab->image}}" alt=" " class="img-responsive" />
 									</div>
-									<h5><a href="single.html">Laptop</a></h5>
+									<h5><a href="single.html">{{$lptab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$880</span> <i class="item_price">$850</i></p>
+										@if($lptab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($lptab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($lptab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($lptab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
@@ -189,352 +91,131 @@
 										</form>
 									</div>
 								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Notebook</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$290</span> <i class="item_price">$280</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Notebook" /> 
-											<input type="hidden" name="amount" value="280.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/12.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Kid's Toy</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$120</span> <i class="item_price">$80</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Kid's Toy" /> 
-											<input type="hidden" name="amount" value="80.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
+								@endforeach
 								<div class="clearfix"> </div>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade" id="House" aria-labelledby="House-tab">
+						<div role="tabpanel" class="tab-pane fade" id="Tablet" aria-labelledby="Tablet-tab">
 							<div class="agile_ecommerce_tabs">
+								@foreach ($tablet_tab as $tbltab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
+										@if($tbltab->promotion_price!=0)
+										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$tbltab->image}}" alt=" " class="img-responsive" />
 									</div>
-									<h5><a href="single.html">Refrigerator</a></h5>
+									<h5><a href="single.html">{{$tbltab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$950</span> <i class="item_price">$820</i></p>
+										@if($tbltab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($tbltab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($tbltab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($tbltab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Refrigerator" /> 
-											<input type="hidden" name="amount" value="820.00" />   
+											<input type="hidden" name="w3ls_item" value="Laptop" /> 
+											<input type="hidden" name="amount" value="850.00" />   
 											<button type="submit" class="w3ls-cart">Add to cart</button>
 										</form>
 									</div>
 								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">LED Tv</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$700</span> <i class="item_price">$680</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="LED Tv"/> 
-											<input type="hidden" name="amount" value="680.00"/>   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/15.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Washing Machine</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$520</span> <i class="item_price">$510</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Washing Machine" /> 
-											<input type="hidden" name="amount" value="510.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
+								@endforeach
 								<div class="clearfix"> </div>
 							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="Watch" aria-labelledby="Watch-tab">
 							<div class="agile_ecommerce_tabs">
+								@foreach ($watch_tab as $wtab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Grinder</a></h5>
+										@if($wtab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$wtab->image}}" alt=" " class="img-responsive" />
+									</div> 
+									<h5><a href="single.html">{{$wtab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$460</span> <i class="item_price">$450</i></p>
+										@if($wtab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($wtab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($wtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($wtab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Grinder" /> 
-											<input type="hidden" name="amount" value="450.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Water Purifier</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$390</span> <i class="item_price">$350</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Water Purifier" /> 
+											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
 											<input type="hidden" name="amount" value="350.00" />   
 											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
+										</form>  
 									</div>
 								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Coffee Maker</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$250</span> <i class="item_price">$220</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Coffee Maker" /> 
-											<input type="hidden" name="amount" value="220.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
+								@endforeach
 								<div class="clearfix"> </div>
+
 							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="Camera" aria-labelledby="Camera-tab">
 							<div class="agile_ecommerce_tabs">
+								@foreach ($camera_tab as $cmtab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Grinder</a></h5>
+										@if($cmtab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$cmtab->image}}" alt=" " class="img-responsive" />
+									</div> 
+									<h5><a href="single.html">{{$cmtab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$460</span> <i class="item_price">$450</i></p>
+										@if($cmtab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($cmtab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($cmtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($cmtab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Grinder" /> 
-											<input type="hidden" name="amount" value="450.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Water Purifier</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$390</span> <i class="item_price">$350</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Water Purifier" /> 
+											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
 											<input type="hidden" name="amount" value="350.00" />   
 											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
+										</form>  
 									</div>
 								</div>
+								@endforeach
+								<div class="clearfix"> </div>
+
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="House" aria-labelledby="House-tab">
+							<div class="agile_ecommerce_tabs">
+								@foreach ($house_tab as $hstab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/pages/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Coffee Maker</a></h5>
+										@if($hstab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$hstab->image}}" alt=" " class="img-responsive" />
+									</div> 
+									<h5><a href="single.html">{{$hstab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$250</span> <i class="item_price">$220</i></p>
+										@if($hstab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($hstab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($hstab->unit_price)}}đ</span> <i class="item_price">{{ number_format($hstab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Coffee Maker" /> 
-											<input type="hidden" name="amount" value="220.00" />   
+											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
+											<input type="hidden" name="amount" value="350.00" />   
 											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
+										</form>  
 									</div>
 								</div>
+								@endforeach
 								<div class="clearfix"> </div>
+
 							</div>
 						</div>
 					</div>
@@ -1062,7 +743,10 @@
 				<div class="col-md-3 agileinfo_new_products_grid" id="space_img" >
 					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
 						<div class="hs-wrapper hs-wrapper1">
-							<img src="source/pages/images/{{$new->image}}" alt=" " class="img-responsive" />
+							@if($new->promotion_price!=0)
+							<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+							@endif
+							<img src="source/pages/images/{{$new->image}}" alt=" " class="img-responsive" id="img_bottom" />
 						</div>
 					<h5><a href="single.html">{{$new->name}}</a></h5>
 						<div class="simpleCart_shelfItem">
