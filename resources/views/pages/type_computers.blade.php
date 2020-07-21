@@ -2,9 +2,9 @@
 @section('content')
 
 	<!-- banner -->
-	<div class="banner banner3">
+	<div class="banner banner2">
 		<div class="container">
-			<h2>Deals on Large <span>Appliances</span> Flat <i>25% Discount</i></h2> 
+			<h2>Top Selling <span>Gadgets</span> Flat <i>25% Discount</i></h2> 
 		</div>
 	</div> 
 	<!-- breadcrumbs -->
@@ -12,7 +12,7 @@
 		<div class="container">
 			<ul>
 				<li><a href="{{route ('Trang-chu')}}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>Products2</li>
+				<li>Products1</li>
 			</ul>
 		</div>
 	</div>
@@ -108,17 +108,17 @@
 				<div class="col-md-8 w3ls_mobiles_grid_right">
 					<div class="col-md-6 w3ls_mobiles_grid_right_left">
 						<div class="w3ls_mobiles_grid_right_grid1">
-							<img src="{{asset('source/pages/images/50.jpg')}}" alt=" " class="img-responsive" />
+							<img src="{{asset('source/pages/images/48.jpg')}}" alt=" " class="img-responsive" />
 							<div class="w3ls_mobiles_grid_right_grid1_pos1">
-								<h3>Kitchen Appliances<span>Up To</span> 25% Discount</h3>
+								<h3>Attractive<span> New</span> Wrist Watches</h3>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 w3ls_mobiles_grid_right_left">
 						<div class="w3ls_mobiles_grid_right_grid1">
-							<img src="{{asset('source/pages/images/51.jpg')}}" alt=" " class="img-responsive" />
-							<div class="w3ls_mobiles_grid_right_grid1_pos">
-								<h3>Home Entertainment<span>Mega</span>Deals</h3>
+							<img src="{{asset('source/pages/images/49.jpg')}}" alt=" " class="img-responsive" />
+							<div class="w3ls_mobiles_grid_right_grid1_pos"> 
+								<h3>Best Prices On<span> Laptop</span>Upto 50% Off</h3>
 							</div>
 						</div>
 					</div>
@@ -128,22 +128,22 @@
 						<div class="clearfix"> </div>
 					</div>
 					<div class="w3ls_mobiles_grid_right_grid3">
-						@foreach($pr_type_home as $prtyho)
+						@foreach($pr_type_computer as $prtyco)
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 							<div class="agile_ecommerce_tab_left mobiles_grid">
 
 								<div class="hs-wrapper hs-wrapper2" >
-									@if($prtyho->promotion_price!=0)
+									@if($prtyco->promotion_price!=0)
 									<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
 									@endif
-									<img src="{{ asset('source/pages/images/'.$prtyho['image']) }}" alt=" " id="img-size" class="img-responsive" />
+									<img src="{{ asset('source/pages/images/'.$prtyco['image']) }}" alt=" " id="img-size" class="img-responsive" />
 								</div>								
-							<h5><a href="single.html">{{$prtyho->name}}</a></h5> 
+							<h5><a href="single.html">{{$prtyco->name}}</a></h5> 
 								<div class="simpleCart_shelfItem">									
-									@if($prtyho->promotion_price==0)
-									<p><i class="item_price">{{ number_format($prtyho->unit_price)}}đ</i></p>
+									@if($prtyco->promotion_price==0)
+									<p><i class="item_price">{{ number_format($prtyco->unit_price)}}đ</i></p>
 									@else
-									<p><span>{{ number_format($prtyho->unit_price)}}đ</span> <i class="item_price">{{ number_format($prtyho->promotion_price)}}đ</i></p>	
+									<p><span>{{ number_format($prtyco->unit_price)}}đ</span> <i class="item_price">{{ number_format($prtyco->promotion_price)}}đ</i></p>	
 									@endif
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
@@ -153,7 +153,9 @@
 										<button type="submit" class="w3ls-cart">Add to cart</button>
 									</form>
 								</div> 
+
 							</div>
+							
 						</div>
 						@endforeach
 						<div class="clearfix"> </div>
@@ -162,25 +164,25 @@
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>  
+	</div> 
 	<!-- Related Products -->
 	<div class="w3l_related_products">
 		<div class="container">
 			<h3>Sản phẩm khác</h3>
 			<ul id="flexiselDemo2">			
-				@foreach($pr_other_home as $protho)
+				@foreach($pr_other_computer as $protco)
 				<li>
 					<div class="w3l_related_products_grid">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper3">
-								<img src="{{ asset('source/pages/images/'.$protho['image']) }}" alt=" " class="img-responsive" id="img-slide-size" />
+								<img src="{{ asset('source/pages/images/'.$protco['image']) }}" alt=" " class="img-responsive" id="img-slide-size" />
 							</div>
-							<h5><a href="single.html">{{$protho->name}}</a></h5>
+							<h5><a href="single.html">{{$protco->name}}</a></h5>
 							<div class="simpleCart_shelfItem">
-								@if($protho->promotion_price==0)
-								<p><i class="item_price">{{ number_format($protho->unit_price)}}đ</i></p>
+								@if($protco->promotion_price==0)
+								<p><i class="item_price">{{ number_format($protco->unit_price)}}đ</i></p>
 								@else
-								<p><span>{{ number_format($protho->unit_price)}}đ</span> <i class="item_price">{{ number_format($protho->promotion_price)}}đ</i></p>	
+								<p><span>{{ number_format($protco->unit_price)}}đ</span> <i class="item_price">{{ number_format($protco->promotion_price)}}đ</i></p>	
 								@endif
 								<form action="#" method="post">
 									<input type="hidden" name="cmd" value="_cart" />
@@ -191,7 +193,7 @@
 								</form>
 							</div> 
 
-							@if($protho->new==1)
+							@if($protco->new==1)
 							<div class="mobiles_grid_pos">
 								<h6>New</h6>
 							</div>

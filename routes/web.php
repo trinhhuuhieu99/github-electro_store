@@ -17,9 +17,9 @@ Route::get('/', 'PagesController@getindex' )->name('Trang-chu');
     
 Route::group(['prefix' => 'product'], function () {
     
-    Route::get('mobiles','PagesController@getmobiles')->name('sản phẩm điện thoại');
-    Route::get('accessories','PagesController@getaccessories')->name('phụ kiện');
-    Route::get('home','PagesController@gethome')->name('sản phẩm gia đình');
+    Route::get('mobiles/{type}','PagesController@getmobiles')->name('sản phẩm điện thoại');
+    Route::get('computer/{type}','PagesController@getcomputer')->name('sản phẩm máy tính');
+    Route::get('home/{type}','PagesController@gethome')->name('sản phẩm gia đình');
 
 });
 

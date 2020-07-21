@@ -44,16 +44,28 @@ class PagesController extends Controller
         return view('pages.mail');
     }
 
-    public function getmobiles()
+    public function getmobiles($type)
     {
-        return view('pages.type_mobiles');
+        $pr_type_mobile= Product::where('id_type',$type)->get();
+        
+        $pr_other_mobile= Product::where('id_type','<>',$type)->inRandomOrder()->limit(8)->get();
+
+        return view('pages.type_mobiles', ['pr_type_mobile' => $pr_type_mobile, 'pr_other_mobile' => $pr_other_mobile ]);
     }
-    public function getaccessories()
+    public function getcomputer($type)
     {
-        return view('pages.type_accessories');
+        $pr_type_computer= Product::where('id_type',$type)->get();
+
+        $pr_other_computer= Product::where('id_type','<>',$type)->inRandomOrder()->limit(8)->get();
+
+        return view('pages.type_computers',['pr_type_computer' => $pr_type_computer, 'pr_other_computer' => $pr_other_computer ]);
     }
-    public function gethome()
+    public function gethome($type)
     {
-        return view('pages.type_home');
+        $pr_type_home= Product::where('id_type',$type)->get();
+        
+        $pr_other_home= Product::where('id_type','<>',$type)->inRandomOrder()->limit(8)->get();
+
+        return view('pages.type_home', ['pr_type_home' => $pr_type_home, 'pr_other_home' => $pr_other_home ] );
     }
 }

@@ -677,6 +677,16 @@ li.w3pages .dropdown-menu > li > a:hover{
     padding-left: 0;
 	text-align: center;
 }
+
+img#img-slide-size {
+    width: 250px;
+    height: 340px;
+}
+
+img#img-size {
+    width: 255px;
+    height: 320px;
+}
 .agile_ecommerce_tabs {
     padding: 2em 0 0;
 }
@@ -684,7 +694,8 @@ li.w3pages .dropdown-menu > li > a:hover{
 	margin:2em 0 0;
 }
 .agile_ecommerce_tab_left h5 a {
-    font-size: 1.2em;
+    font-size: 17px;
+    font-family: none;
     color: #ced6e0;
     text-decoration: none;
     font-weight: 700;

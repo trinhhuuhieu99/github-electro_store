@@ -21,28 +21,27 @@
                                 <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
                                         <h6>Mobiles</h6>
-                                        <li><a href="products.html">Điện thoại</a></li> 
-                                        <li><a href="products.html">Phụ kiện</a></li>                                     
-                                        <li><a href="products1.html">Wearables <span>New</span></a></li>                                        
-                                        <li><a href="products.html">Popular Models  </a></li>
+                                        @foreach($mobile_type as $mbtype )
+                                        <li><a href="{{route ('sản phẩm điện thoại', $mbtype->id )}}">{{$mbtype->name}}</a></li> 
+                                        @endforeach
+                                        <li><a href="products.html">Popular Models <span>New</span> </a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
                                         <h6>Computer </h6>
-                                        <li><a href="products1.html">Laptop</a></li>
-                                        <li><a href="products1.html">Desktop</a></li>
-                                        <li><a href="products.html">Tablet <span>New</span> </a></li>
+                                        @foreach ($computer_type as $cptype)
+                                        <li><a href="{{route ('sản phẩm máy tính', $cptype->id )}}">{{$cptype->name}}</a></li>
+                                        @endforeach
                                         <li><a href="products1.html"><i>Summer Store</i></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
                                         <h6>Home</h6>
-                                        <li><a href="products2.html">Tv <span>New</span> </a></li>
-                                        <li><a href="products2.html">Camera</a></li>
-                                        <li><a href="products2.html">Thiết bị gia đình</a></li>
-
+                                        @foreach ($home_type as $hmtype)
+                                        <li><a href="{{route ('sản phẩm gia đình', $hmtype->id )}}">{{$hmtype->name}}</a></li>
+                                        @endforeach
                                     </ul>
                                 </div>
                                 <a  href="https://www.facebook.com/" >
