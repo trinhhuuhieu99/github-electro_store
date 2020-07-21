@@ -138,7 +138,7 @@
 									@endif
 									<img src="{{ asset('source/pages/images/'.$prtyho['image']) }}" alt=" " id="img-size" class="img-responsive" />
 								</div>								
-							<h5><a href="single.html">{{$prtyho->name}}</a></h5> 
+							<h5><a href="{{route ('Chi tiết sản phẩm', $prtyho->id )}}">{{$prtyho->name}}</a></h5> 
 								<div class="simpleCart_shelfItem">									
 									@if($prtyho->promotion_price==0)
 									<p><i class="item_price">{{ number_format($prtyho->unit_price)}}đ</i></p>
@@ -175,7 +175,7 @@
 							<div class="hs-wrapper hs-wrapper3">
 								<img src="{{ asset('source/pages/images/'.$protho['image']) }}" alt=" " class="img-responsive" id="img-slide-size" />
 							</div>
-							<h5><a href="single.html">{{$protho->name}}</a></h5>
+							<h5><a href="{{route ('Chi tiết sản phẩm', $protho->id )}}">{{$protho->name}}</a></h5>
 							<div class="simpleCart_shelfItem">
 								@if($protho->promotion_price==0)
 								<p><i class="item_price">{{ number_format($protho->unit_price)}}đ</i></p>

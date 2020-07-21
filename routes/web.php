@@ -25,7 +25,6 @@ Route::group(['prefix' => 'product'], function () {
 
 Route::get('/about', 'PagesController@getabout')->name('Thong-tin');
 
-
-Route::get('/detail', 'PagesController@getdetail')->name('Chi tiết sản phẩm');
+Route::get('/detail/{type}', 'PagesController@getdetail')->name('Chi tiết sản phẩm');
 
 Route::get('/mail', 'PagesController@getmail')->name('Gửi-mail');

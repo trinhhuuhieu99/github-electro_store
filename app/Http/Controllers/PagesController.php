@@ -33,9 +33,11 @@ class PagesController extends Controller
         return \view('pages.about');
     }
 
-    public function getdetail()
+    public function getdetail($type)
     {
-        return view('pages.detail');
+        $pr_detail= Product::where('id',$type)->first();
+
+        return view('pages.detail', ['pr_detail' => $pr_detail] );
         
     }
 

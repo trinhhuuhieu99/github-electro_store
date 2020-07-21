@@ -44,7 +44,7 @@
 										@endif
 										<img src="source/pages/images/{{$mb_tab->image}}" alt=" " class="img-responsive" />
 									</div> 
-									<h5><a href="single.html">{{$mb_tab->name}}</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $mb_tab->id )}}">{{$mb_tab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
 										@if($mb_tab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($mb_tab->unit_price)}}đ</i></p>
@@ -75,7 +75,7 @@
 										@endif
 										<img src="source/pages/images/{{$lptab->image}}" alt=" " class="img-responsive" />
 									</div>
-									<h5><a href="single.html">{{$lptab->name}}</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $lptab->id )}}">{{$lptab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
 										@if($lptab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($lptab->unit_price)}}đ</i></p>
@@ -105,7 +105,7 @@
 										@endif
 										<img src="source/pages/images/{{$tbltab->image}}" alt=" " class="img-responsive" />
 									</div>
-									<h5><a href="single.html">{{$tbltab->name}}</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $tbltab->id )}}">{{$tbltab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
 										@if($tbltab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($tbltab->unit_price)}}đ</i></p>
@@ -135,7 +135,7 @@
 										@endif
 										<img src="source/pages/images/{{$wtab->image}}" alt=" " class="img-responsive" />
 									</div> 
-									<h5><a href="single.html">{{$wtab->name}}</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $wtab->id )}}">{{$wtab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
 										@if($wtab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($wtab->unit_price)}}đ</i></p>
@@ -166,7 +166,7 @@
 										@endif
 										<img src="source/pages/images/{{$cmtab->image}}" alt=" " class="img-responsive" />
 									</div> 
-									<h5><a href="single.html">{{$cmtab->name}}</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $cmtab->id )}}">{{$cmtab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
 										@if($cmtab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($cmtab->unit_price)}}đ</i></p>
@@ -197,7 +197,7 @@
 										@endif
 										<img src="source/pages/images/{{$hstab->image}}" alt=" " class="img-responsive" />
 									</div> 
-									<h5><a href="single.html">{{$hstab->name}}</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $hstab->id )}}">{{$hstab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
 										@if($hstab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($hstab->unit_price)}}đ</i></p>
@@ -748,7 +748,7 @@
 							@endif
 							<img src="source/pages/images/{{$new->image}}" alt=" " class="img-responsive" id="img_bottom" />
 						</div>
-					<h5><a href="single.html">{{$new->name}}</a></h5>
+					<h5><a href="{{route ('Chi tiết sản phẩm', $new->id )}}">{{$new->name}}</a></h5>
 						<div class="simpleCart_shelfItem">
 						@if($new->promotion_price==0)
 							<p><i class="item_price">{{$new->unit_price}}</i></p>
