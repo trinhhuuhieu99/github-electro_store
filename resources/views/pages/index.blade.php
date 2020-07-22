@@ -54,8 +54,8 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
-											<input type="hidden" name="amount" value="350.00" />   
+											<input type="hidden" name="w3ls_item" value=phone /> 
+											<input type="hidden" name="amount" value= 450 />   
 											<button type="submit" class="w3ls-cart">Add to cart</button>
 										</form>  
 									</div>
@@ -225,7 +225,7 @@
 		</div>
 	</div>
 	<!-- //banner-bottom --> 
-	<!-- modal-video -->
+	{{-- <!-- modal-video -->
 	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -651,7 +651,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- //modal-video -->
+	<!-- //modal-video --> --}}
 	<!-- banner-bottom1 -->
 	<div class="banner-bottom1">
 		<div class="agileinfo_banner_bottom1_grids">
@@ -751,9 +751,9 @@
 					<h5><a href="{{route ('Chi tiết sản phẩm', $new->id )}}">{{$new->name}}</a></h5>
 						<div class="simpleCart_shelfItem">
 						@if($new->promotion_price==0)
-							<p><i class="item_price">{{$new->unit_price}}</i></p>
+							<p><i class="item_price">{{$new->unit_price}}đ</i></p>
 						@else
-							<p><span>{{$new->unit_price}}</span> <i class="item_price">{{$new->promotion_price}}</i></p>	
+							<p><span>{{$new->unit_price}}đ</span> <i class="item_price">{{$new->promotion_price}}đ</i></p>	
 						@endif
 						
 							<form action="#" method="post">
