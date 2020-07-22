@@ -178,7 +178,7 @@ $(document).ready(function() {
     });
 </script>
 
-<!-- cart-js -->
+{{-- <!-- cart-js -->
 <script>
     w3ls.render();
 
@@ -193,7 +193,25 @@ $(document).ready(function() {
         }
     });
 </script>  
-<!-- //cart-js -->
+<!-- //cart-js --> --}}
+
+{{-- cart-test --}}
+<script>
+    $(document).ready(function () {
+        $(".w3ls-cart").click(function (e) { 
+            e.preventDefault();
+            alert('d');
+            
+        });
+
+        $(".w3view-cart").click(function (e) { 
+            e.preventDefault();
+            alert("view cart");
+        });
+    });
+</script>
+{{-- cart-test --}}
+
 <script type="text/javascript">
     $(document).ready(function () {
         $('#horizontalTab1').easyResponsiveTabs({

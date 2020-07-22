@@ -750,13 +750,13 @@
 						</div>
 					<h5><a href="{{route ('Chi tiết sản phẩm', $new->id )}}">{{$new->name}}</a></h5>
 						<div class="simpleCart_shelfItem">
-						@if($new->promotion_price==0)
-							<p><i class="item_price">{{$new->unit_price}}đ</i></p>
-						@else
-							<p><span>{{$new->unit_price}}đ</span> <i class="item_price">{{$new->promotion_price}}đ</i></p>	
-						@endif
+							@if($new->promotion_price==0)
+							<p><i class="item_price">{{ number_format($new->unit_price)}}đ</i></p>
+							@else
+							<p><span>{{ number_format($new->unit_price)}}đ</span> <i class="item_price">{{ number_format($new->promotion_price)}}đ</i></p>	
+							@endif
 						
-							<form action="#" method="post">
+							<form action="#" method="post" >
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="Red Laptop"> 
