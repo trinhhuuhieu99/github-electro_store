@@ -51,13 +51,7 @@
 										@else
 										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->promotion_price)}}đ</i></p>	
 										@endif
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value=phone /> 
-											<input type="hidden" name="amount" value= 450 />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>  
+										<a href="{{route ('add_cart', $mb_tab->id )}}" id="add_cart" >Add to cart</a>
 									</div>
 								</div>
 								@endforeach

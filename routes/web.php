@@ -28,3 +28,5 @@ Route::get('/about', 'PagesController@getabout')->name('Thong-tin');
 Route::get('/detail/{type}', 'PagesController@getdetail')->name('Chi tiết sản phẩm');
 
 Route::get('/mail', 'PagesController@getmail')->name('Gửi-mail');
+
+Route::get('add-cart/{type}', 'CartController@add')->name('add_cart');

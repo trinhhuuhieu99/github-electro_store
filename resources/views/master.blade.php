@@ -84,6 +84,7 @@ $(document).ready(function() {
 <script src="{{asset('source/pages/js/script.js')}}"></script>
 <script type="text/javascript" src="{{asset('source/pages/js/jquery.flexisel.js')}}"></script>
 <script src="{{asset('source/pages/js/minicart.js')}}"></script>
+<script src="{{asset('source/pages/js/jquery.mycart.js')}}"></script>
 
 
 
@@ -196,9 +197,9 @@ $(document).ready(function() {
 <!-- //cart-js --> --}}
 
 {{-- cart-test --}}
-<script>
+{{-- <script>
     $(document).ready(function () {
-        $(".w3ls-cart").click(function (e) { 
+        $("#add_cart").click(function (e) { 
             e.preventDefault();
             alert('d');
             
@@ -209,8 +210,15 @@ $(document).ready(function() {
             alert("view cart");
         });
     });
-</script>
+</script> --}}
 {{-- cart-test --}}
+
+<script>
+    $(document).ready(function () {
+        $('#hide_alert').delay(2000);
+        $('#hide_alert').hide(1300);
+    });
+</script>
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -220,6 +228,14 @@ $(document).ready(function() {
             fit: true   // 100% fit in a container
         });
     });
+
+// add-cart
+
+
+
+// add-cart
+
+
 </script>
 </body>
 </html>

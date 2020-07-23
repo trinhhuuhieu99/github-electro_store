@@ -21,6 +21,8 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Glegoo', serif;
 	margin:0;
 }
+
+#h3 {}
 ul,label{
 	margin:0;
 	padding:0;
@@ -676,6 +678,38 @@ li.w3pages .dropdown-menu > li > a:hover{
 .agile_ecommerce_tab_left {
     padding-left: 0;
 	text-align: center;
+}
+
+a#add_cart, button.my-cart-btn {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a2328;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: .5em 1.5em;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    /* background: transparent; */
+    outline: none;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    transition: .3s all;
+    background-color: whitesmoke;
+}
+
+button.my-cart-btn:hover{
+
+	background: #3742fa;
+    color:#fff;
+    border:1px solid #3c43a4;
+
+}
+
+a#add_cart:hover {
+    background: #3742fa;
+    color:#fff;
+    border:1px solid #3c43a4;
 }
 
 .hs-wrapper.hs-wrapper3{
@@ -2161,6 +2195,23 @@ section#tables  p {
 }
 .alert {
 	font-size: 0.85em;
+}
+
+.alert.alert-info {
+    height: 140px;
+    z-index: 9999;
+    width: 280px;
+    /* margin-left: 80%; */
+    position: absolute;
+    opacity: 0.9;
+    text-align: center;
+    margin-top: 61px;
+}
+
+.alert.alert-info .text {
+    color: #0abde3;
+    margin-top: 10%;
+    font-size: 20px;
 }
 h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
 	line-height:2em;
