@@ -51,7 +51,7 @@
 										@else
 										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->promotion_price)}}đ</i></p>	
 										@endif
-										<a href="{{route ('add_cart', $mb_tab->id )}}" id="add_cart" >Add to cart</a>
+										<button type="submit" class="w3ls-cart">Add to cart</button>
 									</div>
 								</div>
 								@endforeach
@@ -81,7 +81,7 @@
 											<input type="hidden" name="add" value="1" /> 
 											<input type="hidden" name="w3ls_item" value="Laptop" /> 
 											<input type="hidden" name="amount" value="850.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
+											<button type="submit"   class="w3ls-cart">Add to cart</button>
 										</form>
 									</div>
 								</div>
@@ -742,21 +742,14 @@
 							@endif
 							<img src="source/pages/images/{{$new->image}}" alt=" " class="img-responsive" id="img_bottom" />
 						</div>
-					<h5><a href="{{route ('Chi tiết sản phẩm', $new->id )}}">{{$new->name}}</a></h5>
+						<h5><a href="{{route ('Chi tiết sản phẩm', $new->id )}}">{{$new->name}}</a></h5>
 						<div class="simpleCart_shelfItem">
 							@if($new->promotion_price==0)
 							<p><i class="item_price">{{ number_format($new->unit_price)}}đ</i></p>
 							@else
 							<p><span>{{ number_format($new->unit_price)}}đ</span> <i class="item_price">{{ number_format($new->promotion_price)}}đ</i></p>	
-							@endif
-						
-							<form action="#" method="post" >
-								<input type="hidden" name="cmd" value="_cart">
-								<input type="hidden" name="add" value="1"> 
-								<input type="hidden" name="w3ls_item" value="Red Laptop"> 
-								<input type="hidden" name="amount" value="500.00">   
-								<button type="submit" class="w3ls-cart">Add to cart</button>
-							</form>
+							@endif					 
+								<button data-id="{{$new->id}}"  data-proname="{{$new->name}}" data-proimage="{{$new->image}}" data-promotion_price="{{$new->promotion_price}}" data-unit_price="{{$new->unit_price}}" data-proamount= 1 class="w3ls-cart">Add to cart</button>							
 						</div>
 					</div>
 				</div>
@@ -765,6 +758,37 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		$(document).ready(function () {
+			$(".w3ls-cart").mouseenter(function () { 
+				var dt_id = $(this).attr('data-id')
+				var dt_name= $(this).attr('data-proname')
+				var dt_img= $(this).attr('data-proimage')
+				var dt_pro_price= $(this).attr('data-promotion_price')
+				var dt_unit_price= $(this).attr('data-unit_price')
+				var dt_amount= $(this).attr('data-proamount')
+				const product =
+				{
+					id: dt_id,
+					name: dt_name,
+					image: dt_img,
+					pro_price: dt_pro_price,
+					unit_price: dt_unit_price,
+					amount: dt_amount,	
+				}
+				localStorage.setItem('products', JSON.stringify(product))
+
+				// localStorage.setItem('product', JSON.stringify(product));
+				console.log("111111111111111111", product )
+				// const divParent = $(this).parents('.agile_ecommerce_tab_left');
+				// const aElm = divParent.find('a')
+				// console.log('xxxxxxxxxxxxxxxxxxxxxxx', aElm.text())
+			});
+		});
+
+	</script>
+
 	<!-- //new-products -->
 	<!-- top-brands -->
 	<div class="top-brands">

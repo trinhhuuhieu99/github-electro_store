@@ -593,13 +593,13 @@ li.w3pages .dropdown-menu > li > a:hover{
     border: none;
 }
 .video-img {
-    background: url(../images/2.jpg)no-repeat right center;
+    background: url(../images/may-anh-sony-alpha-a6400-ilce6400m-kit-18135mm.jpg)no-repeat right center;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	min-height: 455px;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 455px;
 }
 .video-img a {
     display: inline-block;
@@ -713,13 +713,13 @@ a#add_cart:hover {
 }
 
 .hs-wrapper.hs-wrapper3{
-	background-color: #E7E5E6;
+	background-color: #FFFFFF;
 }
 
 img#img-slide-size {
-    width: 250px;
-	height: 340px;
-	object-fit: contain;
+    width: 255px;
+    height: 340px;
+    object-fit: contain;
 }
 
 img#img-size {

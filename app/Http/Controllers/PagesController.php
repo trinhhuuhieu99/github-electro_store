@@ -37,7 +37,7 @@ class PagesController extends Controller
     {
         $pr_detail= Product::where('id',$type)->first();
 
-        $pr_other_detail= Product::where('id','<>',$type)->get();
+        $pr_other_detail= Product::where('id','<>',$type)->inRandomOrder()->limit(8)->get();
 
         return view('pages.detail', ['pr_detail' => $pr_detail, 'pr_other_detail' => $pr_other_detail] );
         

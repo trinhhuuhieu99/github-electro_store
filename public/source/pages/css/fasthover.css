@@ -1,13 +1,14 @@
 .hs-wrapper{
 	width: 196px;
-    height: 223px;
+	height: 223px;
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
+	background-color: white;
 }
 .hs-wrapper1{
 	width: 255px !important;
-    height:340px !important;
+	height: 320px !important;
 }
 .hs-wrapper2 {
     width: 223px !important;
@@ -35,11 +36,12 @@
 }
 .hs-wrapper img:nth-child(2){
     -webkit-animation-delay: .5s;
-	-moz-animation-delay: .5s;
-	-o-animation-delay: .5s;
-	-ms-animation-delay: .5s;
-	animation-delay: .5s;
-	z-index: 8;
+    -moz-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    -ms-animation-delay: .5s;
+    animation-delay: .5s;
+    z-index: 8;
+    /* image-rendering: pixelated; */
 }
 
 img#img_bottom {
