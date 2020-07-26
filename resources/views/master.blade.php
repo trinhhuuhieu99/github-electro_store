@@ -11,27 +11,27 @@
 </script>
 <!-- //for-mobile-apps -->
 <!-- Custom Theme files -->
-<link href="{{asset('source/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
-<link href="{{asset('source/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
-<link href="{{asset('source/css/fasthover.css')}}" rel="stylesheet" type="text/css" media="all" />
-<link href="{{asset('source/css/popuo-box.css')}}" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="{{asset('source/css/flexslider.css')}}" type="text/css" media="screen" />
+<link href="{{asset('source/pages/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{asset('source/pages/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{asset('source/pages/css/fasthover.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{asset('source/pages/css/popuo-box.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{{asset('source/pages/css/flexslider.css')}}" type="text/css" media="screen" />
 
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
-<link href="{{asset('source/css/font-awesome.css')}}" rel="stylesheet"> 
+<link href="{{asset('source/pages/css/font-awesome.css')}}" rel="stylesheet"> 
 <!-- //font-awesome icons -->
 <!-- js -->
-<script src="{{asset('source/js/jquery.min.js')}}"></script>
+<script src="{{asset('source/pages/js/jquery.min.js')}}"></script>
 
-<link rel="stylesheet" href="{{asset('source/css/jquery.countdown.css')}}" /> <!-- countdown --> 
+<link rel="stylesheet" href="{{asset('source/pages/css/jquery.countdown.css')}}" /> <!-- countdown --> 
 <!-- //js -->  
 <!-- web fonts --> 
 <link href='https://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'> 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> 
 <!-- //web fonts -->  
 <!-- for bootstrap working -->
-<script type="text/javascript" src="{{asset('source/js/bootstrap-3.1.1.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('source/pages/js/bootstrap-3.1.1.min.js')}}"></script>
 <!-- //for bootstrap working -->
 <!-- start-smooth-scrolling -->
 <script type="text/javascript">
@@ -52,7 +52,7 @@
     @include('footer')
     
 
-<script src="{{asset('source/js/easyResponsiveTabs.js')}}" type="text/javascript"></script>
+<script src="{{asset('source/pages/js/easyResponsiveTabs.js')}}" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#horizontalTab').easyResponsiveTabs({
@@ -63,7 +63,7 @@
     });
 </script>
 <!-- flexslider -->
-<script defer src="{{asset('source/js/jquery.flexslider.js')}}"></script>
+<script defer src="{{asset('source/pages/js/jquery.flexslider.js')}}"></script>
 <script>
 // Can also be used with $(document).ready()
 $(document).ready(function() {
@@ -75,15 +75,16 @@ $(document).ready(function() {
 </script>
 <!-- flexslider -->
 <!-- zooming-effect -->
-<script src="{{asset('source/js/imagezoom.js')}}"></script>
+<script src="{{asset('source/pages/js/imagezoom.js')}}"></script>
 <!-- //zooming-effect -->
 
-<script src="{{asset('source/js/jquery.wmuSlider.js')}}"></script> 
-<script src="{{asset('source/js/jquery.magnific-popup.js')}}" type="text/javascript"></script>
-<script src="{{asset('source/js/jquery.countdown.js')}}"></script>
-<script src="{{asset('source/js/script.js')}}"></script>
-<script type="text/javascript" src="{{asset('source/js/jquery.flexisel.js')}}"></script>
-<script src="{{asset('source/js/minicart.js')}}"></script>
+<script src="{{asset('source/pages/js/jquery.wmuSlider.js')}}"></script> 
+<script src="{{asset('source/pages/js/jquery.magnific-popup.js')}}" type="text/javascript"></script>
+<script src="{{asset('source/pages/js/jquery.countdown.js')}}"></script>
+<script src="{{asset('source/pages/js/script.js')}}"></script>
+<script type="text/javascript" src="{{asset('source/pages/js/jquery.flexisel.js')}}"></script>
+<script src="{{asset('source/pages/js/minicart.js')}}"></script>
+<script src="{{asset('source/pages/js/jquery.mycart.js')}}"></script>
 
 
 
@@ -178,7 +179,7 @@ $(document).ready(function() {
     });
 </script>
 
-<!-- cart-js -->
+{{-- <!-- cart-js -->
 <script>
     w3ls.render();
 
@@ -193,7 +194,32 @@ $(document).ready(function() {
         }
     });
 </script>  
-<!-- //cart-js -->
+<!-- //cart-js --> --}}
+
+{{-- cart-test --}}
+{{-- <script>
+    $(document).ready(function () {
+        $("#add_cart").click(function (e) { 
+            e.preventDefault();
+            alert('d');
+            
+        });
+
+        $(".w3view-cart").click(function (e) { 
+            e.preventDefault();
+            alert("view cart");
+        });
+    });
+</script> --}}
+{{-- cart-test --}}
+
+<script>
+    $(document).ready(function () {
+        $('#hide_alert').delay(2000);
+        $('#hide_alert').hide(1300);
+    });
+</script>
+
 <script type="text/javascript">
     $(document).ready(function () {
         $('#horizontalTab1').easyResponsiveTabs({
@@ -202,6 +228,14 @@ $(document).ready(function() {
             fit: true   // 100% fit in a container
         });
     });
+
+// add-cart
+
+
+
+// add-cart
+
+
 </script>
 </body>
 </html>

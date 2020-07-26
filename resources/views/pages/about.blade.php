@@ -47,7 +47,7 @@
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-6 w3ls_about_grid_right">
-					<img src="source/images/52.jpg" alt=" " class="img-responsive" />
+					<img src="source/pages/images/52.jpg" alt=" " class="img-responsive" />
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -60,7 +60,7 @@
 			<h3>Meet Our Team</h3>
 			<div class="wthree_team_grids">
 				<div class="col-md-3 wthree_team_grid">
-					<img src="source/images/Annotation.jpg" alt=" " class="img-responsive" />
+					<img src="source/pages/images/Annotation.jpg" alt=" " class="img-responsive" />
 					<h4>Trình Hữu Hiếu <span>Chủ tịch hội đồng quản trị</span></h4>
 					<div class="agileits_social_button">
 						<ul>
@@ -72,7 +72,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 wthree_team_grid">
-					<img src="source/images/83516525_1572833009558639_4395811743673420378_n.jpg" alt=" " class="img-responsive" />
+					<img src="source/pages/images/83516525_1572833009558639_4395811743673420378_n.jpg" alt=" " class="img-responsive" />
 					<h4>Cung Minh Phong <span>Tổng giám đốc</span></h4>
 					<div class="agileits_social_button">
 						<ul>
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 wthree_team_grid">
-					<img src="source/images/21731145_498199777196933_8748847657412284194_n.jpg" alt=" " class="img-responsive" />
+					<img src="source/pages/images/21731145_498199777196933_8748847657412284194_n.jpg" alt=" " class="img-responsive" />
 					<h4>Phạm Tiến Việt <span>Thằng ranh</span></h4>
 					<div class="agileits_social_button">
 						<ul>

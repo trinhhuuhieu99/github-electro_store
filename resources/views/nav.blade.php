@@ -1,4 +1,12 @@
 <div class="navigation">
+    @if (session('status'))
+    <div class="alert alert-info" id="hide_alert" >
+        <div class="text">
+            <h3>Thông báo</h3>
+            <span>{{session('status')}}</span>
+        </div>
+    </div>
+    @endif
     <div class="container">
         <nav class="navbar navbar-default">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -21,36 +29,37 @@
                                 <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
                                         <h6>Mobiles</h6>
-                                        <li><a href="products.html">Mobile Phones</a></li>
-                                        <li><a href="products.html">Mp3 Players <span>New</span></a></li> 
-                                        <li><a href="products.html">Popular Models</a></li>
-                                        <li><a href="products.html">All Tablets<span>New</span></a></li>
+                                        @foreach($mobile_type as $mbtype )
+                                        <li><a href="{{route ('sản phẩm điện thoại', $mbtype->id )}}">{{$mbtype->name}}</a></li> 
+                                        @endforeach
+                                        <li><a href="products.html">Popular Models <span>New</span> </a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
-                                        <h6>Accessories</h6>
-                                        <li><a href="products1.html">Laptop</a></li>
-                                        <li><a href="products1.html">Desktop</a></li>
-                                        <li><a href="products1.html">Wearables <span>New</span></a></li>
+                                        <h6>Computer </h6>
+                                        @foreach ($computer_type as $cptype)
+                                        <li><a href="{{route ('sản phẩm máy tính', $cptype->id )}}">{{$cptype->name}}</a></li>
+                                        @endforeach
                                         <li><a href="products1.html"><i>Summer Store</i></a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
                                         <h6>Home</h6>
-                                        <li><a href="products2.html">Tv</a></li>
-                                        <li><a href="products2.html">Camera</a></li>
-                                        <li><a href="products2.html">AC</a></li>
-                                        <li><a href="products2.html">Grinders</a></li>
+                                        @foreach ($home_type as $hmtype)
+                                        <li><a href="{{route ('sản phẩm gia đình', $hmtype->id )}}">{{$hmtype->name}}</a></li>
+                                        @endforeach
                                     </ul>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="w3ls_products_pos">
-                                        <h4>30%<i>Off/-</i></h4>
-                                        <img src="{{asset('source/images/1.jpg')}}" alt=" " class="img-responsive" />
+                                <a  href="https://www.facebook.com/" >
+                                    <div class="col-sm-3" id="anh_link">
+                                        <div class="w3ls_products_pos">
+                                            <h4>30%<i>Off/-</i></h4>
+                                            <img src="{{asset('source/pages/images/1.jpg')}}" alt=" " class="img-responsive" />
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                                 <div class="clearfix"></div>
                             </div>
                         </ul>
@@ -62,3 +71,5 @@
         </nav>
     </div>
 </div>
+
+

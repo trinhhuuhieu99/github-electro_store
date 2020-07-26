@@ -27,226 +27,85 @@
 				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 					<ul id="myTab" class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home">Mobiles</a></li>
-						<li role="presentation"><a href="#audio" role="tab" id="audio-tab" data-toggle="tab" aria-controls="audio">Audio</a></li>
-						<li role="presentation"><a href="#video" role="tab" id="video-tab" data-toggle="tab" aria-controls="video">Computer</a></li>
-						<li role="presentation"><a href="#tv" role="tab" id="tv-tab" data-toggle="tab" aria-controls="tv">Household</a></li>
-						<li role="presentation"><a href="#kitchen" role="tab" id="kitchen-tab" data-toggle="tab" aria-controls="kitchen">Kitchen</a></li>
+						<li role="presentation"><a href="#Laptop" role="tab" id="laptop-tab" data-toggle="tab" aria-controls="laptop">Laptop</a></li>
+						<li role="presentation"><a href="#Tablet" role="tab" id="Tablet-tab" data-toggle="tab" aria-controls="Tablet">Tablet</a></li>						
+						<li role="presentation"><a href="#Watch" role="tab" id="Watch-tab" data-toggle="tab" aria-controls="Watch">Watch</a></li>
+						<li role="presentation"><a href="#Camera" role="tab" id="Camera-tab" data-toggle="tab" aria-controls="Camera">Camera</a></li>
+						<li role="presentation"><a href="#House" role="tab" id="House-tab" data-toggle="tab" aria-controls="tv">Household</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
 							<div class="agile_ecommerce_tabs">
+								@foreach ($mobiles_tab as $mb_tab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
+										@if($mb_tab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$mb_tab->image}}" alt=" " class="img-responsive" />
 									</div> 
-									<h5><a href="single.html">Mobile Phone1</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $mb_tab->id )}}">{{$mb_tab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$380</span> <i class="item_price">$350</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
-											<input type="hidden" name="amount" value="350.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>  
+										@if($mb_tab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($mb_tab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->promotion_price)}}đ</i></p>	
+										@endif
+										<button type="submit" class="w3ls-cart">Add to cart</button>
 									</div>
 								</div>
+								@endforeach
+								<div class="clearfix"> </div>
+
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="Laptop" aria-labelledby="Laptop-tab">
+							<div class="agile_ecommerce_tabs">
+								@foreach ($laptop_tab as $lptab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
+										@if($lptab->promotion_price!=0)
+										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$lptab->image}}" alt=" " class="img-responsive" />
 									</div>
-									<h5><a href="single.html">Mobile Phone2</a></h5>
+									<h5><a href="{{route ('Chi tiết sản phẩm', $lptab->id )}}">{{$lptab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$330</span> <i class="item_price">$302</i></p>
+										@if($lptab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($lptab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($lptab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($lptab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Mobile Phone2" /> 
-											<input type="hidden" name="amount" value="302.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
+											<input type="hidden" name="w3ls_item" value="Laptop" /> 
+											<input type="hidden" name="amount" value="850.00" />   
+											<button type="submit"   class="w3ls-cart">Add to cart</button>
 										</form>
 									</div>
 								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/3.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/5.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/7.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/4.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/6.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Mobile Phone3</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$250</span> <i class="item_price">$245</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Mobile Phone3" /> 
-											<input type="hidden" name="amount" value="245.00"/>   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
+								@endforeach
 								<div class="clearfix"> </div>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade" id="audio" aria-labelledby="audio-tab">
+						<div role="tabpanel" class="tab-pane fade" id="Tablet" aria-labelledby="Tablet-tab">
 							<div class="agile_ecommerce_tabs">
+								@foreach ($tablet_tab as $tbltab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
+										@if($tbltab->promotion_price!=0)
+										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$tbltab->image}}" alt=" " class="img-responsive" />
 									</div>
-									<h5><a href="single.html">Speakers</a></h5>
-										
+									<h5><a href="{{route ('Chi tiết sản phẩm', $tbltab->id )}}">{{$tbltab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$320</span> <i class="item_price">$250</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Speakers" /> 
-											<input type="hidden" name="amount" value="250.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Headphones</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$180</span> <i class="item_price">$150</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Headphones" /> 
-											<input type="hidden" name="amount" value="150.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/10.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/8.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/9.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Audio Player</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$220</span> <i class="item_price">$180</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Audio Player" /> 
-											<input type="hidden" name="amount" value="180.00"/>   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="video" aria-labelledby="video-tab">
-							<div class="agile_ecommerce_tabs">
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Laptop</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$880</span> <i class="item_price">$850</i></p>
+										@if($tbltab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($tbltab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($tbltab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($tbltab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
@@ -256,257 +115,101 @@
 										</form>
 									</div>
 								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Notebook</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$290</span> <i class="item_price">$280</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Notebook" /> 
-											<input type="hidden" name="amount" value="280.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/13.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/11.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/12.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Kid's Toy</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$120</span> <i class="item_price">$80</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Kid's Toy" /> 
-											<input type="hidden" name="amount" value="80.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
+								@endforeach
 								<div class="clearfix"> </div>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade" id="tv" aria-labelledby="tv-tab">
+						<div role="tabpanel" class="tab-pane fade" id="Watch" aria-labelledby="Watch-tab">
 							<div class="agile_ecommerce_tabs">
+								@foreach ($watch_tab as $wtab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Refrigerator</a></h5>
+										@if($wtab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$wtab->image}}" alt=" " class="img-responsive" />
+									</div> 
+									<h5><a href="{{route ('Chi tiết sản phẩm', $wtab->id )}}">{{$wtab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$950</span> <i class="item_price">$820</i></p>
+										@if($wtab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($wtab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($wtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($wtab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Refrigerator" /> 
-											<input type="hidden" name="amount" value="820.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">LED Tv</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$700</span> <i class="item_price">$680</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="LED Tv"/> 
-											<input type="hidden" name="amount" value="680.00"/>   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/16.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/14.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/15.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Washing Machine</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$520</span> <i class="item_price">$510</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Washing Machine" /> 
-											<input type="hidden" name="amount" value="510.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="kitchen" aria-labelledby="kitchen-tab">
-							<div class="agile_ecommerce_tabs">
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Grinder</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$460</span> <i class="item_price">$450</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Grinder" /> 
-											<input type="hidden" name="amount" value="450.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4 agile_ecommerce_tab_left">
-									<div class="hs-wrapper">
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Water Purifier</a></h5>
-									<div class="simpleCart_shelfItem">
-										<p><span>$390</span> <i class="item_price">$350</i></p>
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Water Purifier" /> 
+											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
 											<input type="hidden" name="amount" value="350.00" />   
 											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
+										</form>  
 									</div>
 								</div>
+								@endforeach
+								<div class="clearfix"> </div>
+
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="Camera" aria-labelledby="Camera-tab">
+							<div class="agile_ecommerce_tabs">
+								@foreach ($camera_tab as $cmtab)
 								<div class="col-md-4 agile_ecommerce_tab_left">
 									<div class="hs-wrapper">
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/19.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/17.jpg" alt=" " class="img-responsive" />
-										<img src="source/images/18.jpg" alt=" " class="img-responsive" />
-										<div class="w3_hs_bottom">
-											<ul>
-												<li>
-													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<h5><a href="single.html">Coffee Maker</a></h5>
+										@if($cmtab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$cmtab->image}}" alt=" " class="img-responsive" />
+									</div> 
+									<h5><a href="{{route ('Chi tiết sản phẩm', $cmtab->id )}}">{{$cmtab->name}}</a></h5>
 									<div class="simpleCart_shelfItem">
-										<p><span>$250</span> <i class="item_price">$220</i></p>
+										@if($cmtab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($cmtab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($cmtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($cmtab->promotion_price)}}đ</i></p>	
+										@endif
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Coffee Maker" /> 
-											<input type="hidden" name="amount" value="220.00" />   
+											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
+											<input type="hidden" name="amount" value="350.00" />   
 											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
+										</form>  
 									</div>
 								</div>
+								@endforeach
 								<div class="clearfix"> </div>
+
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="House" aria-labelledby="House-tab">
+							<div class="agile_ecommerce_tabs">
+								@foreach ($house_tab as $hstab)
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										@if($hstab->promotion_price!=0)
+											<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+										@endif
+										<img src="source/pages/images/{{$hstab->image}}" alt=" " class="img-responsive" />
+									</div> 
+									<h5><a href="{{route ('Chi tiết sản phẩm', $hstab->id )}}">{{$hstab->name}}</a></h5>
+									<div class="simpleCart_shelfItem">
+										@if($hstab->promotion_price==0)
+										<p><i class="item_price">{{ number_format($hstab->unit_price)}}đ</i></p>
+										@else
+										<p><span>{{ number_format($hstab->unit_price)}}đ</span> <i class="item_price">{{ number_format($hstab->promotion_price)}}đ</i></p>	
+										@endif
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
+											<input type="hidden" name="amount" value="350.00" />   
+											<button type="submit" class="w3ls-cart">Add to cart</button>
+										</form>  
+									</div>
+								</div>
+								@endforeach
+								<div class="clearfix"> </div>
+
 							</div>
 						</div>
 					</div>
@@ -516,7 +219,7 @@
 		</div>
 	</div>
 	<!-- //banner-bottom --> 
-	<!-- modal-video -->
+	{{-- <!-- modal-video -->
 	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -526,7 +229,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/3.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/3.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>The Best Mobile Phone 3GB</h4>
@@ -534,19 +237,19 @@
 								commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -585,7 +288,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/9.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/9.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Multimedia Home Accessories</h4>
@@ -598,19 +301,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -649,7 +352,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/11.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/11.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Quad Core Colorful Laptop</h4>
@@ -657,19 +360,19 @@
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia  deserunt.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -708,7 +411,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/14.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/14.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Cool Single Door Refrigerator </h4>
@@ -716,19 +419,19 @@
 								eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -767,7 +470,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/17.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/17.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>New Model Mixer Grinder</h4>
@@ -776,19 +479,19 @@
 								eu fugiat nulla pariatur cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -827,7 +530,7 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/36.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/36.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
 							<h4>Dry Vacuum Cleaner</h4>
@@ -836,19 +539,19 @@
 								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -887,10 +590,10 @@
 				<section>
 					<div class="modal-body">
 						<div class="col-md-5 modal_body_left">
-							<img src="source/images/37.jpg" alt=" " class="img-responsive" />
+							<img src="source/pages/images/37.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="col-md-7 modal_body_right">
-							<h4>Kitchen & Dining Accessories</h4>
+							<h4>Watch & Dining Accessories</h4>
 							<p>Ut enim ad minim veniam, quis nostrud 
 								exercitation ullamco laboris nisi ut aliquip ex ea 
 								commodo consequat.Duis aute irure dolor in 
@@ -900,19 +603,19 @@
 								deserunt mollit anim id est laborum.</p>
 							<div class="rating">
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star-.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star-.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="rating-left">
-									<img src="source/images/star.png" alt=" " class="img-responsive" />
+									<img src="source/pages/images/star.png" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -942,7 +645,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- //modal-video -->
+	<!-- //modal-video --> --}}
 	<!-- banner-bottom1 -->
 	<div class="banner-bottom1">
 		<div class="agileinfo_banner_bottom1_grids">
@@ -967,7 +670,7 @@
 			<div class="w3agile_special_deals_grids">
 				<div class="col-md-7 w3agile_special_deals_grid_left">
 					<div class="w3agile_special_deals_grid_left_grid">
-						<img src="source/images/21.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/21.jpg" alt=" " class="img-responsive" />
 						<div class="w3agile_special_deals_grid_left_grid_pos1">
 							<h5>30%<span>Off/-</span></h5>
 						</div>
@@ -980,7 +683,7 @@
 							<article style="position: absolute; width: 100%; opacity: 0;"> 
 								<div class="banner-wrap">
 									<div class="w3agile_special_deals_grid_left_grid1">
-										<img src="source/images/Annotation.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/Annotation.jpg" alt=" " class="img-responsive" />
 										<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
 											velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
 											eum fugiat quo voluptas nulla pariatur</p>
@@ -991,7 +694,7 @@
 							<article style="position: absolute; width: 100%; opacity: 0;"> 
 								<div class="banner-wrap">
 									<div class="w3agile_special_deals_grid_left_grid1">
-										<img src="source/images/21731145_498199777196933_8748847657412284194_n.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/21731145_498199777196933_8748847657412284194_n.jpg" alt=" " class="img-responsive" />
 										<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
 											velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
 											eum fugiat quo voluptas nulla pariatur</p>
@@ -1002,7 +705,7 @@
 							<article style="position: absolute; width: 100%; opacity: 0;"> 
 								<div class="banner-wrap">
 									<div class="w3agile_special_deals_grid_left_grid1">
-										<img src="source/images/83516525_1572833009558639_4395811743673420378_n.jpg" alt=" " class="img-responsive" />
+										<img src="source/pages/images/83516525_1572833009558639_4395811743673420378_n.jpg" alt=" " class="img-responsive" />
 										<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
 											velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
 											eum fugiat quo voluptas nulla pariatur</p>
@@ -1014,7 +717,7 @@
 					</div>
 				</div>
 				<div class="col-md-5 w3agile_special_deals_grid_right">
-					<img src="source/images/20.jpg" alt=" " class="img-responsive" />
+					<img src="source/pages/images/20.jpg" alt=" " class="img-responsive" />
 					<div class="w3agile_special_deals_grid_right_pos">
 						<h4>Women's <span>Special</span></h4>
 						<h5>save up <span>to</span> 30%</h5>
@@ -1031,21 +734,22 @@
 			<h3>New Products</h3>
 			<div class="agileinfo_new_products_grids">
 				@foreach($new_product as $new)
-				<div class="col-md-3 agileinfo_new_products_grid">
+				<div class="col-md-3 agileinfo_new_products_grid" id="space_img" >
 					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
 						<div class="hs-wrapper hs-wrapper1">
-							<img src="source/images/{{$new->image}}" alt=" " class="img-responsive" />
+							@if($new->promotion_price!=0)
+							<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+							@endif
+							<img src="source/pages/images/{{$new->image}}" alt=" " class="img-responsive" id="img_bottom" />
 						</div>
-					<h5><a href="single.html">{{$new->name}}</a></h5>
+						<h5><a href="{{route ('Chi tiết sản phẩm', $new->id )}}">{{$new->name}}</a></h5>
 						<div class="simpleCart_shelfItem">
-						<p><span>{{$new->unit_price}}</span> <i class="item_price">{{$new->promotion_price}}</i></p>
-							<form action="#" method="post">
-								<input type="hidden" name="cmd" value="_cart">
-								<input type="hidden" name="add" value="1"> 
-								<input type="hidden" name="w3ls_item" value="Red Laptop"> 
-								<input type="hidden" name="amount" value="500.00">   
-								<button type="submit" class="w3ls-cart">Add to cart</button>
-							</form>
+							@if($new->promotion_price==0)
+							<p><i class="item_price">{{ number_format($new->unit_price)}}đ</i></p>
+							@else
+							<p><span>{{ number_format($new->unit_price)}}đ</span> <i class="item_price">{{ number_format($new->promotion_price)}}đ</i></p>	
+							@endif					 
+								<button data-id="{{$new->id}}"  data-proname="{{$new->name}}" data-proimage="{{$new->image}}" data-promotion_price="{{$new->promotion_price}}" data-unit_price="{{$new->unit_price}}" data-proamount= 1 class="w3ls-cart">Add to cart</button>							
 						</div>
 					</div>
 				</div>
@@ -1054,6 +758,37 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		$(document).ready(function () {
+			$(".w3ls-cart").mouseenter(function () { 
+				var dt_id = $(this).attr('data-id')
+				var dt_name= $(this).attr('data-proname')
+				var dt_img= $(this).attr('data-proimage')
+				var dt_pro_price= $(this).attr('data-promotion_price')
+				var dt_unit_price= $(this).attr('data-unit_price')
+				var dt_amount= $(this).attr('data-proamount')
+				const product =
+				{
+					id: dt_id,
+					name: dt_name,
+					image: dt_img,
+					pro_price: dt_pro_price,
+					unit_price: dt_unit_price,
+					amount: dt_amount,	
+				}
+				localStorage.setItem('products', JSON.stringify(product))
+
+				// localStorage.setItem('product', JSON.stringify(product));
+				console.log("111111111111111111", product )
+				// const divParent = $(this).parents('.agile_ecommerce_tab_left');
+				// const aElm = divParent.find('a')
+				// console.log('xxxxxxxxxxxxxxxxxxxxxxx', aElm.text())
+			});
+		});
+
+	</script>
+
 	<!-- //new-products -->
 	<!-- top-brands -->
 	<div class="top-brands">
@@ -1062,19 +797,19 @@
 			<div class="sliderfig">
 				<ul id="flexiselDemo1">			
 					<li>
-						<img src="source/images/tb1.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb1.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb2.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb2.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb3.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb3.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb4.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb4.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="source/images/tb5.jpg" alt=" " class="img-responsive" />
+						<img src="source/pages/images/tb5.jpg" alt=" " class="img-responsive" />
 					</li>
 				</ul>
 			</div>
