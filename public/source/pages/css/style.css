@@ -10,6 +10,18 @@ html, body{
     font-family:'Open Sans', sans-serif;
 }
 
+button.btn.btn-primary.btn-lg {
+    font-size: 20px;
+}
+
+i {
+    font-size: 23px;
+}
+
+span.total-cart {
+    font-size: 25px;
+}
+
 div#space_img {
     padding-top: 20px;
 }
@@ -462,7 +474,7 @@ ul.multi-column-dropdown h6 {
 	z-index: 100;
 }
 .navigation {
-    margin: 3em 0 0;
+    margin: -2em 0 0;
     text-align:center;
     background: #ecf0f1;
     z-index: 999;
@@ -631,14 +643,14 @@ li.w3pages .dropdown-menu > li > a:hover{
     margin: 6em auto 0;
 }
 .modal-header {
-    border: none;
-    min-height: 2.5em;
-    padding:0em 1em 0;
+    /* border: none; */
+    min-height: 3.5em;
+    padding: 2em 2em 0;
 }
 .modal button.close {
     color: #ff5063;
-    opacity: 1;
-    font-size: 2em;
+    opacity: 9999;
+    font-size: 3em;
     outline: none;
     text-align: right;
     width: 100%;
@@ -766,7 +778,7 @@ img#img-size {
 
 i.item_price {}
 .simpleCart_shelfItem button.w3ls-cart {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     color: #1a2328;
     margin: 0;
@@ -1550,9 +1562,10 @@ h2.resp-accordion {
     padding: 3em !important;
 }
 .modal-title {
-    font-size: 1.5em;
+    font-size: 40px;
     color: #212121;
-    padding-left: 1.5em;
+    padding-left: 20px;
+    margin-bottom: 22px;
 }
 .register input[type="text"],.register input[type="email"],.register input[type="password"]{
 	outline:none;
@@ -2177,8 +2190,8 @@ section#tables  p {
 	padding: 15px!important;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-	font-size: 0.9em;
-	color: #999;
+	font-size: 23px;
+	color: black;
 	border-top: none !important;
 }
 .tab-content > .active {

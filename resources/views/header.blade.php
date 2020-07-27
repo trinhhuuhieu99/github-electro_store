@@ -92,12 +92,34 @@
 				</div>
 			</div>
 			<div class="cart cart box_1"> 
-				<form action="#" method="post" class="last"> 
-					<input type="hidden" name="cmd" value="_cart" />
-					<input type="hidden" name="display" value="1" />
-					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-				</form>   
+					{{-- <button class="w3view-cart" type="button" data-toggle="modal" data-target="#cart" ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					 --}}
+					 <div class="row">
+						<div class="col">
+						<button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#cart"><i class="fa fa-cart-arrow-down"> (<span class="total-count"></span>)</button></div>
+					</div>
 			</div>  
 		</div>
 	</div>
 	<!-- //header -->
+	 <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+		</div>
+		<div class="modal-body">
+		  <table class="show-cart table " id="show_table" >
+			
+		  </table>
+		  <div><i>Total price: </i> <span class="total-cart"></span> <i>đ</i> </div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" id="close_modal" data-dismiss="modal">Close</button>
+			<button class="clear-cart btn btn-danger" id="clear_modal" >Clear Cart</button>
+		  	<button type="button" class="btn btn-primary" id="order" >Order now</button>
+		</div>
+	  </div>
+	</div>
+  </div>
