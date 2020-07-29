@@ -382,7 +382,7 @@ $(document).ready(function() {
             }
                 shoppingCart.addItemToCart(id, name, image, price, 1);
             displayCart();
-            alert('đã thêm 1 sản phẩm');
+            $( "div.success" ).fadeIn( 2000 ).delay( 800 ).fadeOut( 400 );
         });
 
         // Clear items
@@ -394,60 +394,59 @@ $(document).ready(function() {
 
 
         function displayCart() {
-  var cartArray = shoppingCart.listCart();
-  var output = "";
-  for(var i in cartArray) {
-    output += "<tr class='tr-tbl' data-image='"+ cartArray[i].image +"' data-id='"+ cartArray[i].id +"' >"
-        + "<td><b>" + cartArray[i].name + "</b></td>" 
-        + "<td class='pro_price'> <span> " + new Intl.NumberFormat().format(cartArray[i].price) + " </span> <i>đ</i> </td>"
-        + "<td><div class='form-inline'>"
-        + "<button class='glyphicon glyphicon-minus btn btn-danger btn-minus'></button>" 
-        + "<input type='number' class='item-count form-control  ' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" 
-        + "<button class='glyphicon glyphicon-plus  btn btn-success btn-plus'></button>" 
-        + "</div></td>"
-        + "<td><button class='delete-item glyphicon glyphicon-remove btn btn-danger' data-name='" + cartArray[i].name + "'></button></td>" 
-        + "<td class='total-product'> <span>" + new Intl.NumberFormat().format(cartArray[i].total)  + "</span> <i>đ</i> </td>" 
-    //   + "<td><i>đ</i></td>" 
-      +  "</tr>";
-  }
-  $('.show-cart').html(output);
-  $('.total-cart').html( new Intl.NumberFormat().format(shoppingCart.totalCart())  );
-  $('.total-count').html(  shoppingCart.totalCount());
+            var cartArray = shoppingCart.listCart();
+            var output = "";
+            for(var i in cartArray) {
+            output += "<tr class='tr-tbl' data-image='"+ cartArray[i].image +"' data-id='"+ cartArray[i].id +"' >"
+                + "<td><b>"+ cartArray[i].name +"</b></td>" 
+                + "<td class='pro_price'> <span> " + new Intl.NumberFormat().format(cartArray[i].price) + " </span> <i>đ</i> </td>"
+                + "<td><div class='form-inline'>"
+                + "<button class='glyphicon glyphicon-minus btn btn-danger btn-minus'></button>" 
+                + "<input type='number' class='item-count form-control  ' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" 
+                + "<button class='glyphicon glyphicon-plus  btn btn-success btn-plus'></button>" 
+                + "</div></td>"
+                + "<td><button class='delete-item glyphicon glyphicon-remove btn btn-danger' data-name='" + cartArray[i].name + "'></button></td>" 
+                + "<td class='total-product'> <span>" + new Intl.NumberFormat().format(cartArray[i].total)  + "</span> <i>đ</i> </td>" 
+                +  "</tr>";
+            }
+            $('.show-cart').html(output);
+            $('.total-cart').html( new Intl.NumberFormat().format(shoppingCart.totalCart())  );
+            $('.total-count').html(  shoppingCart.totalCount());
   
-    $('.btn-plus').on("click", function () {
-            var count = parseInt($(this).parent().find('.item-count').val());
-            count ++;
-            $(this).parent().find('.item-count').val(count);
-            var this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').text())*count
-            var set_this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').html(this_total))
-            $('.total-cart').html(  shoppingCart.totalCart());
-            var name =$(this).parent().find('.item-count').data('name')
-            var price = $(this).parents('.tr-tbl').find('.pro_price').text();
-            var id = $(this).parents('.tr-tbl').data("id")
-            var image = $(this).parents('.tr-tbl').data("image")
-            console.log(id,price,name,image,count)
-            shoppingCart.addItemToCart(id, name, image, price, count);
-            displayCart();
-        });
+            $('.btn-plus').on("click", function () {
+                var count = parseInt($(this).parent().find('.item-count').val());
+                count ++;
+                $(this).parent().find('.item-count').val(count);
+                var this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').text())*count
+                var set_this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').html(this_total))
+                $('.total-cart').html(  shoppingCart.totalCart());
+                var name =$(this).parent().find('.item-count').data('name')
+                var price = $(this).parents('.tr-tbl').find('.pro_price').text();
+                var id = $(this).parents('.tr-tbl').data("id")
+                var image = $(this).parents('.tr-tbl').data("image")
+                console.log(id,price,name,image,count)
+                shoppingCart.addItemToCart(id, name, image, price, count);
+                displayCart();
+            });
 
     
-        $('.btn-minus').on("click", function () {
-            var count = parseInt($(this).parent().find('.item-count').val());
-            count --;
-            $(this).parent().find('.item-count').val(count);
-            var this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').text())*count
-            var set_this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').html(this_total))
-            $('.total-cart').html(  shoppingCart.totalCart());
-            var name =$(this).parent().find('.item-count').data('name')
-            var price = $(this).parents('.tr-tbl').find('.pro_price').text();
-            var id = $(this).parents('.tr-tbl').data("id")
-            var image = $(this).parents('.tr-tbl').data("image")
-            console.log(id,price,name,image,count)
-            shoppingCart.removeItemFromCart(id, name, image, price, count);
-            displayCart();
-        });
+            $('.btn-minus').on("click", function () {
+                var count = parseInt($(this).parent().find('.item-count').val());
+                count --;
+                $(this).parent().find('.item-count').val(count);
+                var this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').text())*count
+                var set_this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').html(this_total))
+                $('.total-cart').html(  shoppingCart.totalCart());
+                var name =$(this).parent().find('.item-count').data('name')
+                var price = $(this).parents('.tr-tbl').find('.pro_price').text();
+                var id = $(this).parents('.tr-tbl').data("id")
+                var image = $(this).parents('.tr-tbl').data("image")
+                console.log(id,price,name,image,count)
+                shoppingCart.removeItemFromCart(id, name, image, price, count);
+                displayCart();
+            });
 
-}
+    }
 
         // Delete item button
     
@@ -480,10 +479,7 @@ $(document).ready(function() {
             shoppingCart.setCountForItem(name, count);
             displayCart();
         });
-
         displayCart();
-
-
     });
 </script>
 

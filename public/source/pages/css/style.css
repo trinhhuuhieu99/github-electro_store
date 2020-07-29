@@ -18,6 +18,16 @@ i {
     font-size: 23px;
 }
 
+input.item-count.form-control {
+    width: 60px;
+}
+
+input.item-count.form-control {}
+
+.col-md-4.agileinfo_new_products_grid.agileinfo_new_products_grid_mobiles {
+    margin-bottom: 15px;
+}
+
 span.total-cart {
     font-size: 25px;
 }
@@ -50,10 +60,10 @@ input[type="submit"],.panel-body ul li a,.checkout-right-basket a,.additional_in
 	-o-transition:.5s ease-in-out;
 }
 .header {
-    padding: 0em 0px 0;
+    padding: 2em 0px 0;
     /* margin-top: 5px; */
-    top: 70px;
-    padding-top: 38px;
+    /* top: 70px; */
+    padding-top: 40px;
 }
 .w3l_login{
 	float:left;
@@ -389,7 +399,7 @@ p.sbmincart-empty-text {
     color: #d8703f;
 }
 .navbar-default .navbar-nav > li > a:focus {
-    color: #ff5063 !important;
+    color: #3c43a4 !important;
 }
 .navbar-default {
     background: none;
@@ -474,7 +484,7 @@ ul.multi-column-dropdown h6 {
 	z-index: 100;
 }
 .navigation {
-    margin: -1em 0 0;
+    margin: -3em 0 0;
     text-align:center;
     background: #ecf0f1;
     z-index: 999;
@@ -745,7 +755,7 @@ img#img-size {
 	margin:2em 0 0;
 }
 .agile_ecommerce_tab_left h5 a {
-    font-size: 17px;
+    font-size: 15px;
     font-family: none;
     color: #ced6e0;
     text-decoration: none;
@@ -1236,17 +1246,17 @@ ul.wmuSliderPagination {
 }
 .agileinfo_banner_bottom1_grid_left a,.team-bottom a{
 	text-align: right;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1em;
-    letter-spacing: 2px;
-    color: #ff5063;
-    background: url(../images/img-sp.png) no-repeat 112px -4px;
-    padding: 0 45px 0 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: 2px;
+	color: #ff5063;
+	background: url(../images/img-sp.png) no-repeat 112px -4px;
+	padding: 4px 60px 5px 5px;
 }
 .agileinfo_banner_bottom1_grid_left a:hover,.team-bottom a:hover{
 	color:#212121;
-	background:url(../images/img-sp.png) no-repeat 112px -38px;
+	background:url(../images/img-sp.png) no-repeat 115px -38px;
 }
 .agileinfo_banner_bottom1_grid_right{
 	background:url(../images/45.jpg) no-repeat 0px 0px;
@@ -1379,7 +1389,7 @@ ul.wmuSliderPagination {
 /*-- //newsletter --*/
 /*-- footer --*/
 .footer{
-	padding:4em 0;
+	padding: 7em 0;
 	background: #9E9E9E;
 }
 .w3_footer_grid h3{
@@ -5144,8 +5154,8 @@ td.invert-image a img {
 		-o-transform:rotate(45deg);
 		position:relative;
 		padding:4px 0;
-		left: 5px;
-		top: 4px;
+		left: 3px;
+		top: 10px;
 		width: 75px;
 		text-transform:uppercase;
 		background-color:#3a5c83;
@@ -5173,3 +5183,35 @@ td.invert-image a img {
 		background-color: #4CAF50;
 		color: azure;
 		}
+		.alert-box {
+			padding: 15px;
+			margin-bottom: 20px;
+			border: 1px solid transparent;
+			border-radius: 4px;
+			height: 2.5em;
+			width: 15em;
+			float: right;
+			text-align: center;
+			opacity: 0.8;
+		}
+		
+		.success {
+			color: darkslategray;
+			font-size: 25px;
+			font-weight: bolder;
+			background-color: #55efc4;
+			border-color: azure;
+			display: none;
+			text-align: center;
+			margin-top: 25px;
+		}
+
+.success span {
+    /* top: 38px; */
+    /* margin: 121px; */
+    /* color: #fdcb6e; */
+    text-align: center;
+    /* padding-top: 132px; */
+    /* margin-top: 94px; */
+}
+		

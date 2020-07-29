@@ -1,12 +1,5 @@
 <div class="navigation">
-    @if (session('status'))
-    <div class="alert alert-info" id="hide_alert" >
-        <div class="text">
-            <h3>Thông báo</h3>
-            <span>{{session('status')}}</span>
-        </div>
-    </div>
-    @endif
+
     <div class="container">
         <nav class="navbar navbar-default">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -70,6 +63,7 @@
             </div>
         </nav>
     </div>
+    <div class="alert-box success"><span>Thêm sản phẩm thành công</span></div>
 </div>
 
 

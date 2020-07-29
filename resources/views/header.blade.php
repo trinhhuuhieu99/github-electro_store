@@ -107,13 +107,17 @@
 	<div class="modal-dialog modal-lg" role="document">
 	  <div class="modal-content">
 		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+			<div class="row">
+				<div class="col-sm-8"><h5 class="modal-title" id="exampleModalLabel">Cart</h5></div>
+				
+				<div class="col-sm-4" ><i>Total price: </i> <span class="total-cart"></span> <i>đ</i> </div>
+			</div>
 		</div>
 		<div class="modal-body">
 		  <table class="show-cart table " id="show_table" >
 			
 		  </table>
-		  <div><i>Total price: </i> <span class="total-cart"></span> <i>đ</i> </div>
+		  
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" id="close_modal" data-dismiss="modal">Close</button>
