@@ -29,4 +29,4 @@ Route::get('/detail/{type}', 'PagesController@getdetail')->name('Chi tiết sả
 
 Route::get('/mail', 'PagesController@getmail')->name('Gửi-mail');
 
-Route::get('add-cart/{type}', 'CartController@add')->name('add_cart');
+Route::get('/add-cart', 'PagesController@getaddcard')->name('add_cart');

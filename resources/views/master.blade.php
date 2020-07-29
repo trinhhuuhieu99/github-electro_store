@@ -402,7 +402,7 @@ $(document).ready(function() {
                 + "<td class='pro_price'> <span> " + new Intl.NumberFormat().format(cartArray[i].price) + " </span> <i>đ</i> </td>"
                 + "<td><div class='form-inline'>"
                 + "<button class='glyphicon glyphicon-minus btn btn-danger btn-minus'></button>" 
-                + "<input type='number' class='item-count form-control  ' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" 
+                + "<input type='number' class='item-count form-control' min='1' max='20'  data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" 
                 + "<button class='glyphicon glyphicon-plus  btn btn-success btn-plus'></button>" 
                 + "</div></td>"
                 + "<td><button class='delete-item glyphicon glyphicon-remove btn btn-danger' data-name='" + cartArray[i].name + "'></button></td>" 

@@ -72,4 +72,10 @@ class PagesController extends Controller
 
         return view('pages.type_home', ['pr_type_home' => $pr_type_home, 'pr_other_home' => $pr_other_home ] );
     }
+
+    public function getaddcard()
+    {
+        return view('pages.card');
+    }
+
 }
