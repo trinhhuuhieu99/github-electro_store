@@ -241,12 +241,13 @@ $(document).ready(function() {
         cart = [];
         
         // Constructor
-        function Item(id, name, image, price, count) 
+        function Item(id, name, image, price, pro_price, count) 
         {
             this.id = id;
             this.name = name;
             this.image = image;
             this.price = price;
+            this.pro_price = pro_price;
             this.count = count;
         }
         
@@ -270,31 +271,31 @@ $(document).ready(function() {
         var obj = {};
         
         // Add to cart
-        obj.addItemToCart = function(id, name, image, price, count) {
+        obj.addItemToCart = function(id, name, image, price, pro_price, count) {
             for(var item in cart) {
-            if(cart[item].name === name) {
+            if(cart[item].id === id) {
                 cart[item].count ++;
                 saveCart();
                 return;
             }
             }
-            var item = new Item(id, name, image, price, count);
+            var item = new Item(id, name, image, price, pro_price, count);
             cart.push(item);
             saveCart();
         }
         // Set count from item
-        obj.setCountForItem = function(name, count) {
+        obj.setCountForItem = function(id, count) {
             for(var i in cart) {
-            if (cart[i].name === name) {
+            if (cart[i].id === id) {
                 cart[i].count = count;
                 break;
             }
             }
         };
         // Remove item from cart
-        obj.removeItemFromCart = function(id, name, image, price, count) {
+        obj.removeItemFromCart = function(id, name, image, price, pro_price, count) {
             for(var item in cart) {
-                if(cart[item].name === name) {
+                if(cart[item].id === id) {
                 cart[item].count --;
                 if(cart[item].count === 0) {
                     cart.splice(item, 1);
@@ -306,9 +307,9 @@ $(document).ready(function() {
         }
 
         // Remove all items from cart
-        obj.removeItemFromCartAll = function(name) {
+        obj.removeAllItemFromCart = function(id) {
             for(var item in cart) {
-            if(cart[item].name === name) {
+            if(cart[item].id === id) {
                 cart.splice(item, 1);
                 break;
             }
@@ -320,6 +321,14 @@ $(document).ready(function() {
         obj.clearCart = function() {
             cart = [];
             saveCart();
+        }
+
+        obj.totalDiscount = function() {
+            var totalDiscount = 0;
+            for(var i in cart){
+                totalDiscount += cart[i].pro_price * cart[i].count ;
+            }
+            return totalDiscount;
         }
 
         // Count cart 
@@ -337,7 +346,7 @@ $(document).ready(function() {
             for(var item in cart) {
             totalCart += cart[item].price * cart[item].count;
             }
-            return Number(totalCart);
+            return totalCart;
         }
 
         // List cart
@@ -360,7 +369,7 @@ $(document).ready(function() {
         // Item : Object/Class
         // addItemToCart : Function
         // removeItemFromCart : Function
-        // removeItemFromCartAll : Function
+        // removeAllItemFromCart : Function
         // clearCart : Function
         // countCart : Function
         // totalCart : Function
@@ -375,14 +384,12 @@ $(document).ready(function() {
             var id = $(this).data('id');
             var name = $(this).data('name');
             var image = $(this).data('image');
-            if ($(this).data('promotion_price') != 0) {
-                var price = Number($(this).data('promotion_price'));
-            } else {
-                var price = Number($(this).data('unit_price'));
-            }
-                shoppingCart.addItemToCart(id, name, image, price, 1);
+            var price = Number($(this).data('unit_price'));
+            var pro_price = Number($(this).data('promotion_price') );
+                shoppingCart.addItemToCart(id, name, image, price, pro_price, 1);
             displayCart();
-            $( "div.success" ).fadeIn( 2000 ).delay( 800 ).fadeOut( 400 );
+            $( "div.success" ).fadeIn( 2000 ).delay( 500 ).fadeOut( 400 );
+            console.log(shoppingCart.listCart())
         });
 
         // Clear items
@@ -397,90 +404,136 @@ $(document).ready(function() {
             var cartArray = shoppingCart.listCart();
             var output = "";
             for(var i in cartArray) {
-            output += "<tr class='tr-tbl' data-image='"+ cartArray[i].image +"' data-id='"+ cartArray[i].id +"' >"
+            output += "<tr class='tr-tbl' data-price='"+ cartArray[i].price +"'  data-pro_price='"+ cartArray[i].pro_price +"' data-image='"+ cartArray[i].image +"' data-id='"+ cartArray[i].id +"' >"
                 + "<td><b>"+ cartArray[i].name +"</b></td>" 
-                + "<td class='pro_price'> <span> " + new Intl.NumberFormat().format(cartArray[i].price) + " </span> <i>đ</i> </td>"
+                + "<td class='pro_price'>  <span> " + new Intl.NumberFormat().format(cartArray[i].price-cartArray[i].pro_price  ) + " </span> <i>đ</i> </td>"
                 + "<td><div class='form-inline'>"
                 + "<button class='glyphicon glyphicon-minus btn btn-danger btn-minus'></button>" 
-                + "<input type='number' class='item-count form-control' min='1' max='20'  data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" 
+                + "<input type='number' class='item-count form-control' min='1' max='20' value='" + cartArray[i].count + "'>" 
                 + "<button class='glyphicon glyphicon-plus  btn btn-success btn-plus'></button>" 
                 + "</div></td>"
-                + "<td><button class='delete-item glyphicon glyphicon-remove btn btn-danger' data-name='" + cartArray[i].name + "'></button></td>" 
-                + "<td class='total-product'> <span>" + new Intl.NumberFormat().format(cartArray[i].total)  + "</span> <i>đ</i> </td>" 
+                + "<td><button class='delete-item glyphicon glyphicon-remove btn btn-danger'></button></td>" 
+                + "<td class='total-product'> <span>" + new Intl.NumberFormat().format((cartArray[i].price-cartArray[i].pro_price)*cartArray[i].count)  + "</span> <i>đ</i> </td>" 
                 +  "</tr>";
             }
+            var total_cart = shoppingCart.totalCart();
+            var total_discount = shoppingCart.totalDiscount();
             $('.show-cart').html(output);
-            $('.total-cart').html( new Intl.NumberFormat().format(shoppingCart.totalCart())  );
-            $('.total-count').html(  shoppingCart.totalCount());
+            $('.total-cart').text( new Intl.NumberFormat().format(total_cart-total_discount)  );
+            $('.total-count').text(  shoppingCart.totalCount());
   
             $('.btn-plus').on("click", function () {
                 var count = parseInt($(this).parent().find('.item-count').val());
-                count ++;
-                $(this).parent().find('.item-count').val(count);
-                var this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').text())*count
-                var set_this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').html(this_total))
-                $('.total-cart').html(  shoppingCart.totalCart());
-                var name =$(this).parent().find('.item-count').data('name')
-                var price = $(this).parents('.tr-tbl').find('.pro_price').text();
-                var id = $(this).parents('.tr-tbl').data("id")
-                var image = $(this).parents('.tr-tbl').data("image")
-                console.log(id,price,name,image,count)
-                shoppingCart.addItemToCart(id, name, image, price, count);
+                var name =$(this).parents('.tr-tbl').find('b').text();
+                var price = $(this).parents('.tr-tbl').data("price");
+                var id = $(this).parents('.tr-tbl').data("id");
+                var image = $(this).parents('.tr-tbl').data("image");
+                var pro_price = $(this).parents('.tr-tbl').data("pro_price");
+                shoppingCart.addItemToCart(id, name, image, price, pro_price, count);
                 displayCart();
             });
 
     
             $('.btn-minus').on("click", function () {
                 var count = parseInt($(this).parent().find('.item-count').val());
-                count --;
-                $(this).parent().find('.item-count').val(count);
-                var this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').text())*count
-                var set_this_total = parseInt($(this).parents('.tr-tbl').find('.total-product').html(this_total))
-                $('.total-cart').html(  shoppingCart.totalCart());
                 var name =$(this).parent().find('.item-count').data('name')
-                var price = $(this).parents('.tr-tbl').find('.pro_price').text();
-                var id = $(this).parents('.tr-tbl').data("id")
-                var image = $(this).parents('.tr-tbl').data("image")
-                console.log(id,price,name,image,count)
-                shoppingCart.removeItemFromCart(id, name, image, price, count);
+                var price = $(this).parents('.tr-tbl').data('price')
+                var id = $(this).parents('.tr-tbl').data('id')
+                var image = $(this).parents('.tr-tbl').data('image')
+                var pro_price = $(this).parents('.tr-tbl').data('pro_price')
+                shoppingCart.removeItemFromCart(id, name, image, price, pro_price,count);
                 displayCart();
             });
 
-    }
+            // Delete item button
+            $('.delete-item').click(function () { 
+                var id = $(this).parents('.tr-tbl').data('id')
+                shoppingCart.removeAllItemFromCart(id);
+                displayCart();
+                
+            });
+        }
 
-        // Delete item button
-    
-        $('.show-cart').on("click", ".delete-item", function(event) {
-            var name = $(this).data('name')
-            shoppingCart.removeItemFromCartAll(name);
-            displayCart();
-        })
+        function tableCartList() {
+            var cartArray = shoppingCart.listCart();
+            var output="";
+            for (var i in cartArray) {
+                output +=  "<tr class='text-center' data-id='"+ cartArray[i].id +"' data-price='"+ cartArray[i].price +"' data-image='"+ cartArray[i].image +"' data-pro_price='"+ cartArray[i].pro_price +"' >"
+                        +"<td class='product-remove'><button class='delete-item-pay glyphicon glyphicon-remove btn btn-danger'></button></td>"
+                        +"<td class='image-prod'>"
+                        +"<div class='d-flex flex-row flex-nowrap'>"
+                        +"<div class='img img-responsive'>" 
+                        +"<img class='img img-fluid' src='source/pages/images/" + cartArray[i].image+ "'>"
+                        +"</div>"
+                        +"</div>"
+                        +"</td>"
+                        +"<td class='product-name'>"
+                        +"<h3>"+ cartArray[i].name +"</h3>"
+                        +"</td>"
+                        +"<td class='price'><span>"+new Intl.NumberFormat().format( cartArray[i].price )+"</span> <i>đ</i></td>"
+                        +"<td class='quantity'>"
+                        +"<div class='form-inline'>"
+                        +"<button class='glyphicon glyphicon-minus btn btn-danger btn-minus-pay'></button>"
+                        +"<input type='number' class='item-count' max='20' min='1' data-name='' value='"+ cartArray[i].count +"'>"
+                        +"<button class='glyphicon glyphicon-plus  btn btn-success btn-plus-pay'></button>"
+                        +"</div>"
+                        +"</td>"
+                        +"<td class='tbl-total'> <span>"+ new Intl.NumberFormat().format(cartArray[i].total) +"</span> <i>đ</i> </td>"
+                        +"</tr>"
+                    }
+                    
+                    var total_discount = shoppingCart.totalDiscount()
+                    var total_cart_detal = shoppingCart.totalCart()
+                    var total_cart_all = total_cart_detal-total_discount;
+                    $(".tbl_show_cart").html(output);
+                    $('.total-cart-detail').text( new Intl.NumberFormat().format(total_cart_detal));
+                    $(".total-discount").text(new Intl.NumberFormat().format(total_discount));
+                    $(".total-cart-all").text(new Intl.NumberFormat().format(total_cart_all));
+                   
+                    $('.btn-minus-pay').on("click", function () {
+                        var count = $(this).parent().find(".item-count").val();
+                        var name = $(this).parents('.text-center').find('h3').text();
+                        var id = $(this).parents('.text-center').data('id');
+                        var price = $(this).parents('.text-center').data('price');
+                        var pro_price = $(this).parents('.text-center').data('pro_price');
+                        var image= $(this).parents('.text-center').data('image');
+                        shoppingCart.removeItemFromCart(id, name, image, price, pro_price,count);
+                        tableCartList();
+                    });
 
-
-
-        // // -1
-        // $('.show-cart').on("click", ".btn-minus", function(event) {
-        //     var name = $(this).data('name')
-        //     shoppingCart.removeItemFromCart(name);
-        //     displayCart();
-        // })
-        // // +1
-        // $('.show-cart').on("click", ".btn-plus", function(event) {
-        //     alert(222)
-        //     var name = $(this).data('name')
-        //     shoppingCart.addItemToCart(name);
-        //     displayCart();
-        // })
+                    $('.btn-plus-pay').on("click", function () {
+                        var count = $(this).parent().find(".item-count").val();
+                        var name = $(this).parents('.text-center').find('h3').text();
+                        var id = $(this).parents('.text-center').data('id');
+                        var price = $(this).parents('.text-center').data('price');
+                        var pro_price = $(this).parents('.text-center').data('pro_price');
+                        var image= $(this).parents('.text-center').data('image');
+                        shoppingCart.addItemToCart(id, name, image, price, pro_price, count);
+                        tableCartList();
+                    });
+                    
+                    //btn remove item form table
+                    $('.delete-item-pay').click(function () { 
+                        var id = $(this).parents('.text-center').data('id');
+                        shoppingCart.removeAllItemFromCart(id);
+                        tableCartList();
+                    });           
+        }
 
         // Item count input
         $('.show-cart').on("change", ".item-count", function(event) {
             var name = $(this).data('name');
             var count = Number($(this).val());
-            shoppingCart.setCountForItem(name, count);
+            shoppingCart.setCountForItem(id, count);
             displayCart();
         });
+
         displayCart();
-    });
+        tableCartList();
+});
+
+
+
 </script>
 
 </body>

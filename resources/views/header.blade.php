@@ -92,8 +92,6 @@
 				</div>
 			</div>
 			<div class="cart cart box_1"> 
-					{{-- <button class="w3view-cart" type="button" data-toggle="modal" data-target="#cart" ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-					 --}}
 					 <div class="row">
 						<div class="col">
 						<button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#cart"><i class="fa fa-cart-arrow-down"> (<span class="total-count"></span>)</button></div>
@@ -122,8 +120,8 @@
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" id="close_modal" data-dismiss="modal">Close</button>
 			<button class="clear-cart btn btn-danger" id="clear_modal" >Clear Cart</button>
-		  	<button type="button" class="btn btn-primary" id="order" >Order now</button>
+		  	<button type="button" class="btn btn-primary" id="order" ><a href="{{route('add_cart')}}" id="color-text" >Order now</a> </button>
 		</div>
 	  </div>
 	</div>
-  </div>
+  </div> 

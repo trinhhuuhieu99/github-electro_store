@@ -49,7 +49,7 @@
 										@if($mb_tab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($mb_tab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->unit_price-$mb_tab->promotion_price)}}đ</i></p>	
 										@endif
 										<button type="button" data-id="{{$mb_tab->id}}"  data-name="{{$mb_tab->name}}" data-image="{{$mb_tab->image}}" data-promotion_price="{{$mb_tab->promotion_price}}" data-unit_price="{{$mb_tab->unit_price}}" class="w3ls-cart">Add to cart</button>							
 									</div>
@@ -74,7 +74,7 @@
 										@if($lptab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($lptab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($lptab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($lptab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($lptab->unit_price)}}đ</span> <i class="item_price">{{ number_format($lptab->unit_price-$lptab->promotion_price)}}đ</i></p>	
 										@endif
 										<button type="button" data-id="{{$lptab->id}}"  data-name="{{$lptab->name}}" data-image="{{$lptab->image}}" data-promotion_price="{{$lptab->promotion_price}}" data-unit_price="{{$lptab->unit_price}}" class="w3ls-cart">Add to cart</button>							
 									</div>
@@ -98,7 +98,7 @@
 										@if($tbltab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($tbltab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($tbltab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($tbltab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($tbltab->unit_price)}}đ</span> <i class="item_price">{{ number_format($tbltab->unit_price-$tbltab->promotion_price)}}đ</i></p>	
 										@endif
 										<button type="button" data-id="{{$tbltab->id}}"  data-name="{{$tbltab->name}}" data-image="{{$tbltab->image}}" data-promotion_price="{{$tbltab->promotion_price}}" data-unit_price="{{$tbltab->unit_price}}" class="w3ls-cart">Add to cart</button>							
 									</div>
@@ -122,7 +122,7 @@
 										@if($wtab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($wtab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($wtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($wtab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($wtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($wtab->unit_price-$wtab->promotion_price)}}đ</i></p>	
 										@endif
 										<button type="button" data-id="{{$wtab->id}}"  data-name="{{$wtab->name}}" data-image="{{$wtab->image}}" data-promotion_price="{{$wtab->promotion_price}}" data-unit_price="{{$wtab->unit_price}}" class="w3ls-cart">Add to cart</button>							 
 									</div>
@@ -147,7 +147,7 @@
 										@if($cmtab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($cmtab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($cmtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($cmtab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($cmtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($cmtab->unit_price-$cmtab->promotion_price)}}đ</i></p>	
 										@endif
 										<button type="button" data-id="{{$cmtab->id}}"  data-name="{{$cmtab->name}}" data-image="{{$cmtab->image}}" data-promotion_price="{{$cmtab->promotion_price}}" data-unit_price="{{$cmtab->unit_price}}" class="w3ls-cart">Add to cart</button>							 
 									</div>
@@ -172,7 +172,7 @@
 										@if($hstab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($hstab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($hstab->unit_price)}}đ</span> <i class="item_price">{{ number_format($hstab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($hstab->unit_price)}}đ</span> <i class="item_price">{{ number_format($hstab->unit_price-$hstab->promotion_price)}}đ</i></p>	
 										@endif
 										<button type="button" data-id="{{$hstab->id}}"  data-name="{{$hstab->name}}" data-image="{{$hstab->image}}" data-promotion_price="{{$hstab->promotion_price}}" data-unit_price="{{$hstab->unit_price}}" class="w3ls-cart">Add to cart</button>							 
 									</div>
@@ -717,7 +717,7 @@
 							@if($new->promotion_price==0)
 							<p><i class="item_price">{{ number_format($new->unit_price)}}đ</i></p>
 							@else
-							<p><span>{{ number_format($new->unit_price)}}đ</span> <i class="item_price">{{ number_format($new->promotion_price)}}đ</i></p>	
+							<p><span>{{ number_format($new->unit_price)}}đ</span> <i class="item_price">{{ number_format($new->unit_price-$new->promotion_price)}}đ</i></p>	
 							@endif					 
 								<button type="button" data-id="{{$new->id}}"  data-name="{{$new->name}}" data-image="{{$new->image}}" data-promotion_price="{{$new->promotion_price}}" data-unit_price="{{$new->unit_price}}" class="w3ls-cart">Add to cart</button>							
 						</div>
