@@ -49,9 +49,9 @@
 										@if($mb_tab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($mb_tab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($mb_tab->unit_price)}}đ</span> <i class="item_price">{{ number_format($mb_tab->unit_price-$mb_tab->promotion_price)}}đ</i></p>	
 										@endif
-										<button type="submit" class="w3ls-cart">Add to cart</button>
+										<button type="button" data-id="{{$mb_tab->id}}"  data-name="{{$mb_tab->name}}" data-image="{{$mb_tab->image}}" data-promotion_price="{{$mb_tab->promotion_price}}" data-unit_price="{{$mb_tab->unit_price}}" class="w3ls-cart">Add to cart</button>							
 									</div>
 								</div>
 								@endforeach
@@ -74,15 +74,9 @@
 										@if($lptab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($lptab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($lptab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($lptab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($lptab->unit_price)}}đ</span> <i class="item_price">{{ number_format($lptab->unit_price-$lptab->promotion_price)}}đ</i></p>	
 										@endif
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Laptop" /> 
-											<input type="hidden" name="amount" value="850.00" />   
-											<button type="submit"   class="w3ls-cart">Add to cart</button>
-										</form>
+										<button type="button" data-id="{{$lptab->id}}"  data-name="{{$lptab->name}}" data-image="{{$lptab->image}}" data-promotion_price="{{$lptab->promotion_price}}" data-unit_price="{{$lptab->unit_price}}" class="w3ls-cart">Add to cart</button>							
 									</div>
 								</div>
 								@endforeach
@@ -104,15 +98,9 @@
 										@if($tbltab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($tbltab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($tbltab->unit_price)}}đ</span> <i class="item_price"> {{ number_format($tbltab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($tbltab->unit_price)}}đ</span> <i class="item_price">{{ number_format($tbltab->unit_price-$tbltab->promotion_price)}}đ</i></p>	
 										@endif
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Laptop" /> 
-											<input type="hidden" name="amount" value="850.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>
+										<button type="button" data-id="{{$tbltab->id}}"  data-name="{{$tbltab->name}}" data-image="{{$tbltab->image}}" data-promotion_price="{{$tbltab->promotion_price}}" data-unit_price="{{$tbltab->unit_price}}" class="w3ls-cart">Add to cart</button>							
 									</div>
 								</div>
 								@endforeach
@@ -134,15 +122,9 @@
 										@if($wtab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($wtab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($wtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($wtab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($wtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($wtab->unit_price-$wtab->promotion_price)}}đ</i></p>	
 										@endif
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
-											<input type="hidden" name="amount" value="350.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>  
+										<button type="button" data-id="{{$wtab->id}}"  data-name="{{$wtab->name}}" data-image="{{$wtab->image}}" data-promotion_price="{{$wtab->promotion_price}}" data-unit_price="{{$wtab->unit_price}}" class="w3ls-cart">Add to cart</button>							 
 									</div>
 								</div>
 								@endforeach
@@ -165,15 +147,9 @@
 										@if($cmtab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($cmtab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($cmtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($cmtab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($cmtab->unit_price)}}đ</span> <i class="item_price">{{ number_format($cmtab->unit_price-$cmtab->promotion_price)}}đ</i></p>	
 										@endif
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
-											<input type="hidden" name="amount" value="350.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>  
+										<button type="button" data-id="{{$cmtab->id}}"  data-name="{{$cmtab->name}}" data-image="{{$cmtab->image}}" data-promotion_price="{{$cmtab->promotion_price}}" data-unit_price="{{$cmtab->unit_price}}" class="w3ls-cart">Add to cart</button>							 
 									</div>
 								</div>
 								@endforeach
@@ -196,15 +172,9 @@
 										@if($hstab->promotion_price==0)
 										<p><i class="item_price">{{ number_format($hstab->unit_price)}}đ</i></p>
 										@else
-										<p><span>{{ number_format($hstab->unit_price)}}đ</span> <i class="item_price">{{ number_format($hstab->promotion_price)}}đ</i></p>	
+										<p><span>{{ number_format($hstab->unit_price)}}đ</span> <i class="item_price">{{ number_format($hstab->unit_price-$hstab->promotion_price)}}đ</i></p>	
 										@endif
-										<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart" />
-											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="w3ls_item" value="Mobile Phone1" /> 
-											<input type="hidden" name="amount" value="350.00" />   
-											<button type="submit" class="w3ls-cart">Add to cart</button>
-										</form>  
+										<button type="button" data-id="{{$hstab->id}}"  data-name="{{$hstab->name}}" data-image="{{$hstab->image}}" data-promotion_price="{{$hstab->promotion_price}}" data-unit_price="{{$hstab->unit_price}}" class="w3ls-cart">Add to cart</button>							 
 									</div>
 								</div>
 								@endforeach
@@ -747,9 +717,9 @@
 							@if($new->promotion_price==0)
 							<p><i class="item_price">{{ number_format($new->unit_price)}}đ</i></p>
 							@else
-							<p><span>{{ number_format($new->unit_price)}}đ</span> <i class="item_price">{{ number_format($new->promotion_price)}}đ</i></p>	
+							<p><span>{{ number_format($new->unit_price)}}đ</span> <i class="item_price">{{ number_format($new->unit_price-$new->promotion_price)}}đ</i></p>	
 							@endif					 
-								<button data-id="{{$new->id}}"  data-proname="{{$new->name}}" data-proimage="{{$new->image}}" data-promotion_price="{{$new->promotion_price}}" data-unit_price="{{$new->unit_price}}" data-proamount= 1 class="w3ls-cart">Add to cart</button>							
+								<button type="button" data-id="{{$new->id}}"  data-name="{{$new->name}}" data-image="{{$new->image}}" data-promotion_price="{{$new->promotion_price}}" data-unit_price="{{$new->unit_price}}" class="w3ls-cart">Add to cart</button>							
 						</div>
 					</div>
 				</div>
@@ -758,36 +728,6 @@
 			</div>
 		</div>
 	</div>
-
-	<script>
-		$(document).ready(function () {
-			$(".w3ls-cart").mouseenter(function () { 
-				var dt_id = $(this).attr('data-id')
-				var dt_name= $(this).attr('data-proname')
-				var dt_img= $(this).attr('data-proimage')
-				var dt_pro_price= $(this).attr('data-promotion_price')
-				var dt_unit_price= $(this).attr('data-unit_price')
-				var dt_amount= $(this).attr('data-proamount')
-				const product =
-				{
-					id: dt_id,
-					name: dt_name,
-					image: dt_img,
-					pro_price: dt_pro_price,
-					unit_price: dt_unit_price,
-					amount: dt_amount,	
-				}
-				localStorage.setItem('products', JSON.stringify(product))
-
-				// localStorage.setItem('product', JSON.stringify(product));
-				console.log("111111111111111111", product )
-				// const divParent = $(this).parents('.agile_ecommerce_tab_left');
-				// const aElm = divParent.find('a')
-				// console.log('xxxxxxxxxxxxxxxxxxxxxxx', aElm.text())
-			});
-		});
-
-	</script>
 
 	<!-- //new-products -->
 	<!-- top-brands -->

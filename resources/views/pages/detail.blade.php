@@ -248,13 +248,7 @@
 								@else
 								<p><span>{{ number_format($protde->unit_price)}}đ</span> <i class="item_price">{{ number_format($protde->promotion_price)}}đ</i></p>	
 								@endif
-								<form action="#" method="post">
-									<input type="hidden" name="cmd" value="_cart">
-									<input type="hidden" name="add" value="1"> 
-									<input type="hidden" name="w3ls_item" value="Kid's Toy"> 
-									<input type="hidden" name="amount" value="100.00">   
-									<button type="submit" class="w3ls-cart">Add to cart</button>
-								</form> 
+								<button type="button" data-id="{{$protde->id}}"  data-name="{{$protde->name}}" data-image="{{$protde->image}}" data-promotion_price="{{$protde->promotion_price}}" data-unit_price="{{$protde->unit_price}}" class="w3ls-cart">Add to cart</button>							 
 							</div>
 						</div>
 					</div>
